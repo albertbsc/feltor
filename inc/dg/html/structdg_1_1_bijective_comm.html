@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -142,9 +141,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_bijective_comm.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae489e5157a1aae7b07b4871d715ea4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ae489e5157a1aae7b07b4871d715ea4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a> ()</td></tr>
-<tr class="memdesc:a6ae489e5157a1aae7b07b4871d715ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct empty class. <br /></td></tr>
+<tr class="memitem:a6ae489e5157a1aae7b07b4871d715ea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a> ()</td></tr>
+<tr class="memdesc:a6ae489e5157a1aae7b07b4871d715ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct empty class.  <a href="#a6ae489e5157a1aae7b07b4871d715ea4">More...</a><br /></td></tr>
 <tr class="separator:a6ae489e5157a1aae7b07b4871d715ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae292872aaa59341fd5ca8d254d81348c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">BijectiveComm</a> (thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)</td></tr>
 <tr class="memdesc:ae292872aaa59341fd5ca8d254d81348c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a given map.  <a href="#ae292872aaa59341fd5ca8d254d81348c">More...</a><br /></td></tr>
@@ -174,6 +172,33 @@ struct dg::BijectiveComm&lt; Index, Vector &gt;</h3>
 
 <p>Struct that performs collective scatter and gather operations across processes on distributed vectors using mpi. </p>
 <div class="fragment"><div class="line"><span class="keywordtype">int</span> i = myrank;</div><div class="line"><span class="keywordtype">double</span> values[10] = {i,i,i,i, 9,9,9,9};</div><div class="line">thrust::host_vector&lt;double&gt; hvalues( values, values+10);</div><div class="line"><span class="keywordtype">int</span> pids[10] =      {0,1,2,3, 0,1,2,3};</div><div class="line">thrust::host_vector&lt;int&gt; hpids( pids, pids+10);</div><div class="line"><a class="code" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a> coll( hpids, MPI_COMM_WORLD);</div><div class="line">thrust::host_vector&lt;double&gt; hrecv = coll.scatter( hvalues);</div><div class="line"><span class="comment">//hrecv is now {0,9,1,9,2,9,3,9} e.g. for process 0 </span></div><div class="line">thrust::host_vector&lt;double&gt; hrecv2( coll.send_size());</div><div class="line">coll.gather( hrecv, hrecv2);</div><div class="line"><span class="comment">//hrecv2 now equals hvalues independent of process rank</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6ae489e5157a1aae7b07b4871d715ea4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Index , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_bijective_comm.html">dg::BijectiveComm</a>&lt; Index, Vector &gt;::<a class="el" href="structdg_1_1_bijective_comm.html">BijectiveComm</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct empty class. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae292872aaa59341fd5ca8d254d81348c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +449,7 @@ template&lt;class Index , class Vector &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_bijective_comm.html">BijectiveComm</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

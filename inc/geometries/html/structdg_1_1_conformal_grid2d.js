@@ -1,7 +1,7 @@
 var structdg_1_1_conformal_grid2d =
 [
     [ "metric_category", "structdg_1_1_conformal_grid2d.html#a47e1309664fc5382d3b0f35f5ab489c3", null ],
-    [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#ae805ee2334021d5e69d1d6c063894bb8", null ],
+    [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#acafc551a4089f76a9162cc42e6c41066", null ],
     [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#a3531da445e7682fd301b0e306c57c54a", null ],
     [ "g_xx", "structdg_1_1_conformal_grid2d.html#ac5c9a61b02433ea9786c63853c10f1e6", null ],
     [ "g_yy", "structdg_1_1_conformal_grid2d.html#a044df33eae0a02de2b75a91731e46142", null ],

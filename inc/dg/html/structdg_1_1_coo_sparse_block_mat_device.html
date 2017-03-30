@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -140,6 +139,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_coo_sparse_block_mat_devi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abe618362c10f53456200f9aa40e8b6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#abe618362c10f53456200f9aa40e8b6fe">CooSparseBlockMatDevice</a> ()</td></tr>
+<tr class="separator:abe618362c10f53456200f9aa40e8b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="memTemplParams" colspan="2">template&lt;class OtherValueType &gt; </td></tr>
 <tr class="memitem:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a1eeaedee4a9051a4dfdcfa4725d00b77">CooSparseBlockMatDevice</a> (const <a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a>&lt; OtherValueType &gt; &amp;src)</td></tr>
 <tr class="memdesc:a1eeaedee4a9051a4dfdcfa4725d00b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#a1eeaedee4a9051a4dfdcfa4725d00b77">More...</a><br /></td></tr>
@@ -151,9 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#ac7c23c1bfb96dcdef26422ad1edd1e20">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#ac7c23c1bfb96dcdef26422ad1edd1e20">More...</a><br /></td></tr>
 <tr class="separator:ac7c23c1bfb96dcdef26422ad1edd1e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f3b832549a28b3cacd729ecf5542ef"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac0f3b832549a28b3cacd729ecf5542ef"></a>
-template&lt;class DeviceContainer &gt; </td></tr>
-<tr class="memitem:ac0f3b832549a28b3cacd729ecf5542ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>launch_multiply_kernel</b> (value_type alpha, const DeviceContainer &amp;x, value_type beta, DeviceContainer &amp;y) const </td></tr>
+<tr class="memitem:ac0f3b832549a28b3cacd729ecf5542ef"><td class="memTemplParams" colspan="2">template&lt;class DeviceContainer &gt; </td></tr>
+<tr class="memitem:ac0f3b832549a28b3cacd729ecf5542ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#ac0f3b832549a28b3cacd729ecf5542ef">launch_multiply_kernel</a> (value_type alpha, const DeviceContainer &amp;x, value_type beta, DeviceContainer &amp;y) const </td></tr>
 <tr class="separator:ac0f3b832549a28b3cacd729ecf5542ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -163,6 +163,31 @@ struct dg::CooSparseBlockMatDevice&lt; value_type &gt;</h3>
 <p>Coo Sparse Block Matrix format device version. </p>
 <p>This class holds a copy of a <a class="el" href="structdg_1_1_coo_sparse_block_mat.html" title="Coo Sparse Block Matrix format. ">CooSparseBlockMat</a> on the device, which may be gpu or omp depending on the THRUST_DEVICE_SYSTEM macro. It does the same thing as the host version with the difference that it applies to device vectors. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abe618362c10f53456200f9aa40e8b6fe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; value_type &gt;::<a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">CooSparseBlockMatDevice</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1eeaedee4a9051a4dfdcfa4725d00b77"></a>
 <div class="memitem">
 <div class="memproto">
@@ -226,6 +251,48 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ac0f3b832549a28b3cacd729ecf5542ef"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+<div class="memtemplate">
+template&lt;class DeviceContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">dg::CooSparseBlockMatDevice</a>&lt; value_type &gt;::launch_multiply_kernel </td>
+          <td>(</td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DeviceContainer &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceContainer &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4f852b3ffb56b8eafd34638f7fcc3e92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -280,8 +347,8 @@ template&lt;class Device &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/matthias/feltor/inc/dg/backend/sparseblockmat.cuh</li>
-<li>/home/matthias/feltor/inc/dg/backend/sparseblockmat_gpu_kernels.cuh</li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat_8cuh.html">sparseblockmat.cuh</a></li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat__gpu__kernels_8cuh.html">sparseblockmat_gpu_kernels.cuh</a></li>
 <li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat__omp__kernels_8h_source.html">sparseblockmat_omp_kernels.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -290,7 +357,7 @@ template&lt;class Device &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html">CooSparseBlockMatDevice</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

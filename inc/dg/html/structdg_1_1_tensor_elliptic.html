@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -152,10 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae00308faca82bf7eb9a08c1cb02855d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_elliptic.html#ae00308faca82bf7eb9a08c1cb02855d0">set</a> (const Vector2 &amp;chiXX, const Vector2 &amp;chiXY, const Vector2 &amp;chiYY)</td></tr>
 <tr class="memdesc:ae00308faca82bf7eb9a08c1cb02855d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set new components for \( chi\).  <a href="#ae00308faca82bf7eb9a08c1cb02855d0">More...</a><br /></td></tr>
 <tr class="separator:ae00308faca82bf7eb9a08c1cb02855d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="memTemplParams" colspan="2"><a class="anchor" id="aaed46ec6dab1869b4bfdaeb30248eb64"></a>
-template&lt;class ChiRR , class ChiRZ , class ChiZZ &gt; </td></tr>
+<tr class="memitem:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="memTemplParams" colspan="2">template&lt;class ChiRR , class ChiRZ , class ChiZZ &gt; </td></tr>
 <tr class="memitem:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_elliptic.html#aaed46ec6dab1869b4bfdaeb30248eb64">set</a> (ChiRR chiRR, ChiRZ chiRZ, ChiZZ chiZZ)</td></tr>
-<tr class="memdesc:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform components to the current coordinate system. <br /></td></tr>
+<tr class="memdesc:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform components to the current coordinate system.  <a href="#aaed46ec6dab1869b4bfdaeb30248eb64">More...</a><br /></td></tr>
 <tr class="separator:aaed46ec6dab1869b4bfdaeb30248eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71b88ad609690466ab123aab6018f5a"><td class="memItemLeft" align="right" valign="top">const Vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_tensor_elliptic.html#ac71b88ad609690466ab123aab6018f5a">weights</a> () const </td></tr>
 <tr class="memdesc:ac71b88ad609690466ab123aab6018f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weights used to make the matrix symmetric.  <a href="#ac71b88ad609690466ab123aab6018f5a">More...</a><br /></td></tr>
@@ -312,7 +310,6 @@ template&lt;class Geometry , class Matrix , class Vector &gt; </div>
     <tr><td class="paramname">g</td><td>The Grid </td></tr>
     <tr><td class="paramname">bcx</td><td>boundary condition in x </td></tr>
     <tr><td class="paramname">bcy</td><td>boundary contition in y </td></tr>
-    <tr><td class="paramname">bcz</td><td>boundary contition in z </td></tr>
     <tr><td class="paramname">no</td><td>Not normed for elliptic equations, normed else </td></tr>
     <tr><td class="paramname">dir</td><td>Direction of the right first derivative </td></tr>
   </table>
@@ -405,6 +402,52 @@ template&lt;class Vector2 &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aaed46ec6dab1869b4bfdaeb30248eb64"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Vector &gt; </div>
+<div class="memtemplate">
+template&lt;class ChiRR , class ChiRZ , class ChiZZ &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_tensor_elliptic.html">dg::TensorElliptic</a>&lt; Geometry, Matrix, Vector &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype">ChiRR&#160;</td>
+          <td class="paramname"><em>chiRR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ChiRZ&#160;</td>
+          <td class="paramname"><em>chiRZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ChiZZ&#160;</td>
+          <td class="paramname"><em>chiZZ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transform components to the current coordinate system. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac0a83f798b3c921764c81f6e2e2a59e2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -487,7 +530,7 @@ template&lt;class Geometry , class Matrix , class Vector &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_tensor_elliptic.html">TensorElliptic</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,7 +1,7 @@
 In order to update the gh-pages on github
 
 1. remove old files via
-    git rm -rf inc src
+    git rm -rf inc
 
 2. maybe update folder structure in generate_doc.sh and header.html
 3. generate new documentation

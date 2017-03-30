@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -163,18 +162,33 @@ $(document).ready(function(){initNavTree('functions_v.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>value_type
 : <a class="el" href="classdg_1_1_c_g.html#a1ef5a42ac2f35b465a9b5e5d2293d572">dg::CG&lt; Vector &gt;</a>
+, <a class="el" href="structdg_1_1_inverse.html#ab8f88d084be2ad3991a90a78411e57ee">dg::Inverse&lt; SymmetricOp, container &gt;</a>
+, <a class="el" href="structdg_1_1_invert.html#ac9b9b4f5149a5b63a797a75bf3ac74d7">dg::Invert&lt; container &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9">dg::Operator&lt; T &gt;</a>
+, <a class="el" href="structdg_1_1_v_cycle.html#a3602bd2fd497488888c02fa844fad75e">dg::VCycle&lt; IMatrix, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#afc489108fadfc6d48b131ab521ae0440">dg::VectorTraits&lt; cusp::array1d&lt; T, M &gt; &gt;</a>
 </li>
 <li>variation()
 : <a class="el" href="structdg_1_1_arakawa_x.html#a289a1260a866710e46050063d7acaed3">dg::ArakawaX&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>variationRHS()
 : <a class="el" href="structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
+</li>
+<li>VCycle()
+: <a class="el" href="structdg_1_1_v_cycle.html#aaa8a187972342097a0f838b032317187">dg::VCycle&lt; IMatrix, Matrix, Vector &gt;</a>
+</li>
+<li>vector_category
+: <a class="el" href="structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html#ab5ff4e468d288a2c2f74ce864753bb69">dg::VectorTraits&lt; cusp::array1d&lt; T, M &gt; &gt;</a>
+</li>
+<li>vol()
+: <a class="el" href="structdg_1_1_cartesian_refined_grid2d.html#aebca0e3d73faceaa5657c52596730886">dg::CartesianRefinedGrid2d&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_cylindrical_grid3d.html#af29c154914461858c8321012308521a0">dg::CylindricalGrid3d&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_cylindrical_m_p_i_grid3d.html#acc0da433d2775c4d4181799ebd12cc81">dg::CylindricalMPIGrid3d&lt; container &gt;</a>
 </li>
 <li>Vortex()
 : <a class="el" href="structdg_1_1_vortex.html#a3cb30fdf2c8da900f2b6f3366dbaf237">dg::Vortex</a>
@@ -185,7 +199,7 @@ $(document).ready(function(){initNavTree('functions_v.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

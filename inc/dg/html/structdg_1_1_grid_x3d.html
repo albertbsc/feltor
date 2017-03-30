@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -147,17 +146,16 @@ Inheritance diagram for dg::GridX3d:</div>
  <div class="center">
   <img src="structdg_1_1_grid_x3d.png" usemap="#dg::GridX3d_map" alt=""/>
   <map id="dg::GridX3d_map" name="dg::GridX3d_map">
-<area href="structdg_1_1_refined_grid_x3d.html" title="Refined grid. " alt="dg::RefinedGridX3d" shape="rect" coords="0,56,122,80"/>
+<area href="structdg_1_1_cartesian_grid_x3d.html" title="three-dimensional Grid with Cartesian metric " alt="dg::CartesianGridX3d" shape="rect" coords="0,56,133,80"/>
+<area href="structdg_1_1_refined_grid_x3d.html" title="Refined grid. " alt="dg::RefinedGridX3d" shape="rect" coords="143,56,276,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a627d803ef2b89647f22615095ed74003"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a627d803ef2b89647f22615095ed74003"></a>
-typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>memory_category</b></td></tr>
+<tr class="memitem:a627d803ef2b89647f22615095ed74003"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x3d.html#a627d803ef2b89647f22615095ed74003">memory_category</a></td></tr>
 <tr class="separator:a627d803ef2b89647f22615095ed74003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1389be053c8b90e9d403b2b510abd7bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1389be053c8b90e9d403b2b510abd7bb"></a>
-typedef <a class="el" href="structdg_1_1_three_dimensional_tag.html">ThreeDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dimensionality</b></td></tr>
+<tr class="memitem:a1389be053c8b90e9d403b2b510abd7bb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_three_dimensional_tag.html">ThreeDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x3d.html#a1389be053c8b90e9d403b2b510abd7bb">dimensionality</a></td></tr>
 <tr class="separator:a1389be053c8b90e9d403b2b510abd7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -258,19 +256,43 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a42701071f6fb1553f09d7f0324cd34cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42701071f6fb1553f09d7f0324cd34cd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b> (double <a class="el" href="structdg_1_1_grid_x3d.html#a29ae56650ae01894c01bb0e234263f7e">x0</a>, double <a class="el" href="structdg_1_1_grid_x3d.html#ae455c7d768988d0322bf606f9105a59f">x1</a>)</td></tr>
+<tr class="memitem:a42701071f6fb1553f09d7f0324cd34cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x3d.html#a42701071f6fb1553f09d7f0324cd34cd">init_X_boundaries</a> (double <a class="el" href="structdg_1_1_grid_x3d.html#a29ae56650ae01894c01bb0e234263f7e">x0</a>, double <a class="el" href="structdg_1_1_grid_x3d.html#ae455c7d768988d0322bf606f9105a59f">x1</a>)</td></tr>
 <tr class="separator:a42701071f6fb1553f09d7f0324cd34cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A 3D grid class for cartesian coordinates. </p>
-<p>In the third dimension only 1 polynomial coefficient is used, not n. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>In the third dimension only 1 polynomial coefficient is used, not n. In 2d it looks like </p><div class="fragment"><div class="line">| -----&gt; y </div><div class="line">|  |---x----------x---|</div><div class="line">|  |---x----------x---|</div><div class="line">v  |--- ---------- ---|</div><div class="line">x  |--- ---------- ---| <a class="code" href="structdg_1_1_grid_x3d.html#a58335cedab7a3ca56c3d7d82a6181f4d">fx</a>*Lx</div><div class="line">   |--- ---------- ---|</div><div class="line">   <a class="code" href="structdg_1_1_grid_x3d.html#a147ee8d8b9d74995b9ce84e454a94ba8">fy</a>*Ly</div></div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">double</td><td>scalar value type </td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a1389be053c8b90e9d403b2b510abd7bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_three_dimensional_tag.html">ThreeDimensionalTag</a> <a class="el" href="structdg_1_1_grid_x3d.html#a1389be053c8b90e9d403b2b510abd7bb">dg::GridX3d::dimensionality</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a627d803ef2b89647f22615095ed74003"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a> <a class="el" href="structdg_1_1_grid_x3d.html#a627d803ef2b89647f22615095ed74003">dg::GridX3d::memory_category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3d0c1e8f76ec9f064a7881252dc9184e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -751,6 +773,42 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_bounda
 
 </div>
 </div>
+<a class="anchor" id="a42701071f6fb1553f09d7f0324cd34cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dg::GridX3d::init_X_boundaries </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="structdg_1_1_refined_grid_x3d.html#ab5c2967552453a1406300baad59897c3">dg::RefinedGridX3d</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a891be9e59ed81aed3ee57ab1afdc4db5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1228,7 +1286,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_bounda
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

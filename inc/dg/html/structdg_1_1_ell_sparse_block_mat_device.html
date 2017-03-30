@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -140,6 +139,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_ell_sparse_block_mat_devi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a125eb1a68a5b6eac5d402d2898de4ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a125eb1a68a5b6eac5d402d2898de4ca2">EllSparseBlockMatDevice</a> ()</td></tr>
+<tr class="separator:a125eb1a68a5b6eac5d402d2898de4ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="memTemplParams" colspan="2">template&lt;class OtherValueType &gt; </td></tr>
 <tr class="memitem:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a6766c8c73e729e5a13d93cd5ac3876a1">EllSparseBlockMatDevice</a> (const <a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a>&lt; OtherValueType &gt; &amp;src)</td></tr>
 <tr class="memdesc:a6766c8c73e729e5a13d93cd5ac3876a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate storage.  <a href="#a6766c8c73e729e5a13d93cd5ac3876a1">More...</a><br /></td></tr>
@@ -151,9 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8db0c91d3621274c9efa11dc0d941ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#aa8db0c91d3621274c9efa11dc0d941ef">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:aa8db0c91d3621274c9efa11dc0d941ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#aa8db0c91d3621274c9efa11dc0d941ef">More...</a><br /></td></tr>
 <tr class="separator:aa8db0c91d3621274c9efa11dc0d941ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96bb877eddf3d4dd3ddb29b30f922065"><td class="memTemplParams" colspan="2"><a class="anchor" id="a96bb877eddf3d4dd3ddb29b30f922065"></a>
-template&lt;class DeviceContainer &gt; </td></tr>
-<tr class="memitem:a96bb877eddf3d4dd3ddb29b30f922065"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>launch_multiply_kernel</b> (const DeviceContainer &amp;x, DeviceContainer &amp;y) const </td></tr>
+<tr class="memitem:a96bb877eddf3d4dd3ddb29b30f922065"><td class="memTemplParams" colspan="2">template&lt;class DeviceContainer &gt; </td></tr>
+<tr class="memitem:a96bb877eddf3d4dd3ddb29b30f922065"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a96bb877eddf3d4dd3ddb29b30f922065">launch_multiply_kernel</a> (const DeviceContainer &amp;x, DeviceContainer &amp;y) const </td></tr>
 <tr class="separator:a96bb877eddf3d4dd3ddb29b30f922065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -163,6 +163,31 @@ struct dg::EllSparseBlockMatDevice&lt; value_type &gt;</h3>
 <p>Ell Sparse Block Matrix format device version. </p>
 <p>This class holds a copy of a <a class="el" href="structdg_1_1_ell_sparse_block_mat.html" title="Ell Sparse Block Matrix format. ">EllSparseBlockMat</a> on the device, which may be gpu or omp depending on the THRUST_DEVICE_SYSTEM macro. It can be applied to device vectors and does the same thing as the host version </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a125eb1a68a5b6eac5d402d2898de4ca2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::<a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">EllSparseBlockMatDevice</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6766c8c73e729e5a13d93cd5ac3876a1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -226,6 +251,36 @@ template&lt;class value_type &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a96bb877eddf3d4dd3ddb29b30f922065"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class value_type &gt; </div>
+<div class="memtemplate">
+template&lt;class DeviceContainer &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">dg::EllSparseBlockMatDevice</a>&lt; value_type &gt;::launch_multiply_kernel </td>
+          <td>(</td>
+          <td class="paramtype">const DeviceContainer &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceContainer &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0cff38341994bbe0ccea72549188f115"></a>
 <div class="memitem">
 <div class="memproto">
@@ -266,8 +321,8 @@ template&lt;class deviceContainer &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/matthias/feltor/inc/dg/backend/sparseblockmat.cuh</li>
-<li>/home/matthias/feltor/inc/dg/backend/sparseblockmat_gpu_kernels.cuh</li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat_8cuh.html">sparseblockmat.cuh</a></li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat__gpu__kernels_8cuh.html">sparseblockmat_gpu_kernels.cuh</a></li>
 <li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat__omp__kernels_8h_source.html">sparseblockmat_omp_kernels.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -276,7 +331,7 @@ template&lt;class deviceContainer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html">EllSparseBlockMatDevice</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -83,11 +83,15 @@ var hierarchy =
       [ "dg::CylindricalGrid3d< container >", "structdg_1_1_cylindrical_grid3d.html", null ],
       [ "dg::RefinedGrid3d", "structdg_1_1_refined_grid3d.html", null ]
     ] ],
-    [ "dg::GridX1d", "structdg_1_1_grid_x1d.html", null ],
+    [ "dg::GridX1d", "structdg_1_1_grid_x1d.html", [
+      [ "dg::CartesianGridX1d", "structdg_1_1_cartesian_grid_x1d.html", null ]
+    ] ],
     [ "dg::GridX2d", "structdg_1_1_grid_x2d.html", [
+      [ "dg::CartesianGridX2d", "structdg_1_1_cartesian_grid_x2d.html", null ],
       [ "dg::RefinedGridX2d", "structdg_1_1_refined_grid_x2d.html", null ]
     ] ],
     [ "dg::GridX3d", "structdg_1_1_grid_x3d.html", [
+      [ "dg::CartesianGridX3d", "structdg_1_1_cartesian_grid_x3d.html", null ],
       [ "dg::RefinedGridX3d", "structdg_1_1_refined_grid_x3d.html", null ]
     ] ],
     [ "dg::Helmholtz< Geometry, Matrix, Vector >", "structdg_1_1_helmholtz.html", null ],
@@ -128,8 +132,8 @@ var hierarchy =
     [ "dg::POSVALUE< T >", "structdg_1_1_p_o_s_v_a_l_u_e.html", null ],
     [ "dg::RefinedElliptic< Geometry, IMatrix, Matrix, Vector >", "classdg_1_1_refined_elliptic.html", null ],
     [ "dg::RK< k, Vector >", "structdg_1_1_r_k.html", null ],
-    [ "dg::rk_classic< s >", "structdg_1_1rk__classic.html", null ],
     [ "dg::RK_classic< s, Vector >", "structdg_1_1_r_k__classic.html", null ],
+    [ "dg::rk_classic< s >", "structdg_1_1rk__classic.html", null ],
     [ "dg::rk_coeff< k >", "structdg_1_1rk__coeff.html", null ],
     [ "dg::RowColDistMat< LocalMatrixInner, LocalMatrixOuter, Collective >", "structdg_1_1_row_col_dist_mat.html", null ],
     [ "dg::RowDistMat< LocalMatrix, Collective >", "structdg_1_1_row_dist_mat.html", null ],
@@ -144,6 +148,7 @@ var hierarchy =
     [ "dg::Timer", "classdg_1_1_timer.html", null ],
     [ "dg::ToroidalAverage< container >", "structdg_1_1_toroidal_average.html", null ],
     [ "dg::TwoDimensionalTag", "structdg_1_1_two_dimensional_tag.html", null ],
+    [ "dg::VCycle< IMatrix, Matrix, Vector >", "structdg_1_1_v_cycle.html", null ],
     [ "dg::VectorTraits< cusp::array1d< T, M > >", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html", null ],
     [ "dg::Vortex", "structdg_1_1_vortex.html", null ],
     [ "dg::ZERO", "structdg_1_1_z_e_r_o.html", null ]

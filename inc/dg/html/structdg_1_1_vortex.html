@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -135,7 +134,10 @@ $(document).ready(function(){initNavTree('structdg_1_1_vortex.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Return a 2d vortex function.  
+<p>Return a 2d vortex function </p><p class="formulaDsp">
+\[f(x,y) =\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
+</p>
+<p>.  
  <a href="structdg_1_1_vortex.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functors_8h_source.html">functors.h</a>&gt;</code></p>
@@ -152,7 +154,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9c5cf940de3ddc21b35d62614dda592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Return a 2d vortex function. </p>
+<div class="textblock"><p>Return a 2d vortex function </p><p class="formulaDsp">
+\[f(x,y) =\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
+</p>
+<p>. </p>
+<p>where \( i\in \{0,1,2\}\) is the mode number and r and \(\theta\) are poloidal coordinates with \( r = \sqrt{(x-x_0)^2 + (y-y_0)^2}\), \( \theta = \arctan_2( (y-y_), (x-x_0))\), \( g_0 = 3.831896621 \), \( g_1 = -3.832353624 \), \( g_2 = 7.016\), \( \beta_0 = 0.03827327723\), \( \beta_1 = 0.07071067810 \), \( \beta_2 = 0.07071067810 \) \( K_1\) is the modified and \( J_1\) the Bessel function </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3cb30fdf2c8da900f2b6f3366dbaf237"></a>
 <div class="memitem">
@@ -213,10 +219,10 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">x0</td><td>X position </td></tr>
     <tr><td class="paramname">y0</td><td>Y position </td></tr>
-    <tr><td class="paramname">state</td><td>mode </td></tr>
+    <tr><td class="paramname">state</td><td>mode 0,1, or 2 </td></tr>
     <tr><td class="paramname">R</td><td>characteristic radius of dipole </td></tr>
-    <tr><td class="paramname">u_dipole</td><td>u_drift/u_dipole </td></tr>
-    <tr><td class="paramname">kz</td><td></td></tr>
+    <tr><td class="paramname">u_dipole</td><td>u_drift/u_dipole = \( u_d\) </td></tr>
+    <tr><td class="paramname">kz</td><td>multiply by \( \cos(k_z z) \) in three dimensions </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,9 +264,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Evaluate the vortex. </p>
 <p class="formulaDsp">
-\[\begin{cases} \frac{1}{1.2965125} u_d( r(1+\frac{\beta_i^2}{g_i^2}) - R \frac{\beta_i^2}{g_i^2} J_1(g_i) \frac{r}{RJ_1(g_i)})\cos(\Theta) \text{ if } r/R &lt; 1 \\ \frac{1}{1.2965125} u_dR \frac{K_1(\beta_i \frac{r}{R})}{K_1(\beta)} \cos(\Theta) \text{ else } \end{cases} \]
+\[f(x,y) =\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
 </p>
-<p> where i is the mode number and r and \(\Theta\) are poloidal coordinates </p><dl class="params"><dt>Parameters</dt><dd>
+<p> where \( i\in \{0,1,2\}\) is the mode number and r and \(\theta\) are poloidal coordinates </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>value </td></tr>
     <tr><td class="paramname">y</td><td>value</td></tr>
@@ -311,9 +317,9 @@ Public Member Functions</h2></td></tr>
 
 <p>Evaluate the vortex modulated by a sine wave in z. </p>
 <p class="formulaDsp">
-\[ \cos(k_z z)\begin{cases} \frac{1}{1.2965125} u_d( r(1+\frac{\beta_i^2}{g_i^2}) - R \frac{\beta_i^2}{g_i^2} J_1(g_i) \frac{r}{RJ_1(g_i)})\cos(\Theta) \text{ if } r/R &lt; 1 \\ \frac{1}{1.2965125} u_dR \frac{K_1(\beta_i \frac{r}{R})}{K_1(\beta)} \cos(\Theta) \text{ else } \end{cases} \]
+\[f(x,y,z) =\cos(k_z z)\begin{cases} \frac{u_d}{1.2965125} \left( r\left(1+\frac{\beta_i^2}{g_i^2}\right) - R \frac{\beta_i^2}{g_i^2} \frac{J_1(g_ir/R)}{J_1(g_i)}\right)\cos(\theta) \text{ if } r &lt; R \\ \frac{u_d}{1.2965125} R \frac{K_1(\beta_i {r}/{R})}{K_1(\beta)} \cos(\theta) \text{ else } \end{cases} \]
 </p>
-<p> where i is the mode number and r and \(\Theta\) are poloidal coordinates </p><dl class="params"><dt>Parameters</dt><dd>
+<p> where \( i\in \{0,1,2\}\) is the mode number and r and \(\theta\) are poloidal coordinates </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>value </td></tr>
     <tr><td class="paramname">y</td><td>value </td></tr>
@@ -334,7 +340,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_vortex.html">Vortex</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

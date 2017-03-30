@@ -1,5 +1,6 @@
 var namespacedg =
 [
+    [ "blas2", "namespacedg_1_1blas2.html", null ],
     [ "AB", "structdg_1_1_a_b.html", "structdg_1_1_a_b" ],
     [ "ABS", "structdg_1_1_a_b_s.html", "structdg_1_1_a_b_s" ],
     [ "AbsMax", "structdg_1_1_abs_max.html", "structdg_1_1_abs_max" ],
@@ -13,6 +14,9 @@ var namespacedg =
     [ "CartesianGrid1d", "structdg_1_1_cartesian_grid1d.html", "structdg_1_1_cartesian_grid1d" ],
     [ "CartesianGrid2d", "structdg_1_1_cartesian_grid2d.html", "structdg_1_1_cartesian_grid2d" ],
     [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html", "structdg_1_1_cartesian_grid3d" ],
+    [ "CartesianGridX1d", "structdg_1_1_cartesian_grid_x1d.html", "structdg_1_1_cartesian_grid_x1d" ],
+    [ "CartesianGridX2d", "structdg_1_1_cartesian_grid_x2d.html", "structdg_1_1_cartesian_grid_x2d" ],
+    [ "CartesianGridX3d", "structdg_1_1_cartesian_grid_x3d.html", "structdg_1_1_cartesian_grid_x3d" ],
     [ "CartesianMPIGrid2d", "structdg_1_1_cartesian_m_p_i_grid2d.html", "structdg_1_1_cartesian_m_p_i_grid2d" ],
     [ "CartesianMPIGrid3d", "structdg_1_1_cartesian_m_p_i_grid3d.html", "structdg_1_1_cartesian_m_p_i_grid3d" ],
     [ "CartesianRefinedGrid2d", "structdg_1_1_cartesian_refined_grid2d.html", "structdg_1_1_cartesian_refined_grid2d" ],
@@ -103,8 +107,8 @@ var namespacedg =
     [ "RefinedGridX2d", "structdg_1_1_refined_grid_x2d.html", "structdg_1_1_refined_grid_x2d" ],
     [ "RefinedGridX3d", "structdg_1_1_refined_grid_x3d.html", "structdg_1_1_refined_grid_x3d" ],
     [ "RK", "structdg_1_1_r_k.html", "structdg_1_1_r_k" ],
-    [ "RK_classic", "structdg_1_1_r_k__classic.html", "structdg_1_1_r_k__classic" ],
     [ "rk_classic", "structdg_1_1rk__classic.html", null ],
+    [ "RK_classic", "structdg_1_1_r_k__classic.html", "structdg_1_1_r_k__classic" ],
     [ "rk_coeff", "structdg_1_1rk__coeff.html", null ],
     [ "RowColDistMat", "structdg_1_1_row_col_dist_mat.html", "structdg_1_1_row_col_dist_mat" ],
     [ "RowDistMat", "structdg_1_1_row_dist_mat.html", "structdg_1_1_row_dist_mat" ],
@@ -122,6 +126,7 @@ var namespacedg =
     [ "Timer", "classdg_1_1_timer.html", "classdg_1_1_timer" ],
     [ "ToroidalAverage", "structdg_1_1_toroidal_average.html", "structdg_1_1_toroidal_average" ],
     [ "TwoDimensionalTag", "structdg_1_1_two_dimensional_tag.html", null ],
+    [ "VCycle", "structdg_1_1_v_cycle.html", "structdg_1_1_v_cycle" ],
     [ "VectorTraits< cusp::array1d< T, M > >", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4.html", "structdg_1_1_vector_traits_3_01cusp_1_1array1d_3_01_t_00_01_m_01_4_01_4" ],
     [ "Vortex", "structdg_1_1_vortex.html", "structdg_1_1_vortex" ],
     [ "ZERO", "structdg_1_1_z_e_r_o.html", "structdg_1_1_z_e_r_o" ]

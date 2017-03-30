@@ -1,7 +1,7 @@
 var structdg_1_1_orthogonal_refined_grid_x2d =
 [
     [ "metric_category", "structdg_1_1_orthogonal_refined_grid_x2d.html#aafd71e93da45e1f98154c6a2c2bf1b22", null ],
-    [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html#add16c31e85b81b167c6d2511d47540dd", null ],
+    [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html#a916682eedce8d1778caa0050d11a8a5c", null ],
     [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html#ab362dc5953405aab395b7aab1ff8a4d6", null ],
     [ "associated", "structdg_1_1_orthogonal_refined_grid_x2d.html#a1342cd77cc689858f42c70cf3eb7144c", null ],
     [ "g_xx", "structdg_1_1_orthogonal_refined_grid_x2d.html#a4415f029ecb13d395f744ef47fd776d3", null ],

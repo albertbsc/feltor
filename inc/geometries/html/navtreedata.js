@@ -17,8 +17,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ]
       ] ]
@@ -31,11 +31,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"structdg_1_1_conformal_m_p_i_grid2d.html#a43c1e655af842a486e9a1979e1db525a",
-"structdg_1_1_nabla_psi_inv_x.html#a5c1f1e8dbbb41ef005cc322153008e47",
-"structguenther_1_1_field.html#a21632f1d8b6683d7ade3b1c0683f8e66",
-"structsolovev_1_1_psip_z_z.html#ga9766f1002269177eebe0ef383cfa62cb"
+"adaption_8h.html",
+"structdg_1_1_conformal_refined_grid3d.html#a9d91acbf1ff17fa15d8230080c601dc6",
+"structdg_1_1_orthogonal_refined_grid2d.html#af63e45553e12da5155da4fe8a525af0b",
+"structdg_1_1geo_1_1_ribeiro_x.html#aa8777626eb333b5f918caaa42c09f060"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

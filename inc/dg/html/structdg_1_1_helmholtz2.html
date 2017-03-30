@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -166,9 +165,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fc587749c003360eab032cec506237e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a0fc587749c003360eab032cec506237e">set_chi</a> (const Vector &amp;<a class="el" href="structdg_1_1_helmholtz2.html#a52d5def49e8d522c52599e6eee727401">chi</a>)</td></tr>
 <tr class="memdesc:a0fc587749c003360eab032cec506237e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Chi in the above formula.  <a href="#a0fc587749c003360eab032cec506237e">More...</a><br /></td></tr>
 <tr class="separator:a0fc587749c003360eab032cec506237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6e6002246f4c9f7c5838f524f4206f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac6e6002246f4c9f7c5838f524f4206f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#aac6e6002246f4c9f7c5838f524f4206f">reset_chi</a> ()</td></tr>
-<tr class="memdesc:aac6e6002246f4c9f7c5838f524f4206f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets chi back to one. <br /></td></tr>
+<tr class="memitem:aac6e6002246f4c9f7c5838f524f4206f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#aac6e6002246f4c9f7c5838f524f4206f">reset_chi</a> ()</td></tr>
+<tr class="memdesc:aac6e6002246f4c9f7c5838f524f4206f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets chi back to one.  <a href="#aac6e6002246f4c9f7c5838f524f4206f">More...</a><br /></td></tr>
 <tr class="separator:aac6e6002246f4c9f7c5838f524f4206f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d5def49e8d522c52599e6eee727401"><td class="memItemLeft" align="right" valign="top">const Vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_helmholtz2.html#a52d5def49e8d522c52599e6eee727401">chi</a> () const </td></tr>
 <tr class="memdesc:a52d5def49e8d522c52599e6eee727401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access chi.  <a href="#a52d5def49e8d522c52599e6eee727401">More...</a><br /></td></tr>
@@ -437,6 +435,33 @@ template&lt;class Geometry , class Matrix , class Vector &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aac6e6002246f4c9f7c5838f524f4206f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Geometry , class Matrix , class Vector &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_helmholtz2.html">dg::Helmholtz2</a>&lt; Geometry, Matrix, Vector &gt;::reset_chi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets chi back to one. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0fc587749c003360eab032cec506237e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +582,7 @@ template&lt;class Geometry , class Matrix , class Vector &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_helmholtz2.html">Helmholtz2</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

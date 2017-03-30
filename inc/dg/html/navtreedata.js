@@ -1,13 +1,12 @@
 var NAVTREE =
 [
   [ "Discontinuous Galerkin Library", "index.html", [
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -26,7 +25,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -34,11 +37,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8h.html",
-"functions_8h.html#gafe8af9f57dfc455b23e054f107acd28d",
-"group__lowlevel.html#gad4f5c0d21818f276dda23c904461e2cc",
-"structdg_1_1_cartesian_refined_grid2d.html#ac3f3a665d24330c5cc3b50a17f13e771",
-"structdg_1_1_grid3d.html#a512e11f0b12a9fc40563c8bf18df35ab",
-"structdg_1_1_m_p_i_grid3d.html#a637bacf2654c5d7000951cb1ab3c0990"
+"exceptions_8h.html",
+"group__lowlevel.html#ga326a160653330e4cbdc794590a81db8f",
+"operator__tensor_8cuh.html",
+"structdg_1_1_default_field.html#a205b808dfa892ddc458269e0adb200a6",
+"structdg_1_1_grid_x3d.html#aab98001b317f9940cb3758281563d932",
+"structdg_1_1_refined_grid_x2d.html#a807961e47f783c96a6b627ef36964151"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -15,6 +15,21 @@ var group__basicgrids =
       [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html#a285ed505d9b7d483d7e382a03ce6a5c2", null ],
       [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html#a5069d2818f71baa122c6144ea8731189", null ]
     ] ],
+    [ "CartesianGridX1d", "structdg_1_1_cartesian_grid_x1d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid_x1d.html#a0646828d786a5653054810b4037f2be8", null ],
+      [ "CartesianGridX1d", "structdg_1_1_cartesian_grid_x1d.html#a8bbcae5be43549ef3c725067833fbf3e", null ],
+      [ "CartesianGridX1d", "structdg_1_1_cartesian_grid_x1d.html#a698058929089fdf237897893dfb441a1", null ]
+    ] ],
+    [ "CartesianGridX2d", "structdg_1_1_cartesian_grid_x2d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid_x2d.html#a6ed741b2d01378004110ccc00fc635b8", null ],
+      [ "CartesianGridX2d", "structdg_1_1_cartesian_grid_x2d.html#ae72a107ceaa958cf373e136dedec21b8", null ],
+      [ "CartesianGridX2d", "structdg_1_1_cartesian_grid_x2d.html#ae51d89432e9256414d7d2888db887949", null ]
+    ] ],
+    [ "CartesianGridX3d", "structdg_1_1_cartesian_grid_x3d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid_x3d.html#aa8046507461c86cde6382fa277decfc2", null ],
+      [ "CartesianGridX3d", "structdg_1_1_cartesian_grid_x3d.html#abca854225782ccf63cd0e01ed02bd879", null ],
+      [ "CartesianGridX3d", "structdg_1_1_cartesian_grid_x3d.html#ab8990b0952afb270f0b85370936158c5", null ]
+    ] ],
     [ "CylindricalGrid3d", "structdg_1_1_cylindrical_grid3d.html", [
       [ "metric_category", "structdg_1_1_cylindrical_grid3d.html#a11827f49d0ffce17417a0923c4cfb341", null ],
       [ "perpendicular_grid", "structdg_1_1_cylindrical_grid3d.html#a937d8e570aee04903fba06454731eaa0", null ],

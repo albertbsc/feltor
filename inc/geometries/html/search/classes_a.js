@@ -1,20 +1,16 @@
 var searchData=
 [
   ['lamb',['Lamb',['../../../../inc/dg/html/structdg_1_1_lamb.html',1,'dg']]],
-  ['laplaceadaptpsi',['LaplaceAdaptPsi',['../structdg_1_1detail_1_1_laplace_adapt_psi.html',1,'dg::detail']]],
-  ['laplacechipsi',['LaplaceChiPsi',['../structdg_1_1detail_1_1_laplace_chi_psi.html',1,'dg::detail']]],
-  ['laplacepsi',['LaplacePsi',['../structdg_1_1detail_1_1_laplace_psi.html',1,'dg::detail']]],
-  ['laplacepsip',['LaplacePsip',['../structsolovev_1_1_laplace_psip.html',1,'solovev']]],
-  ['laplacepsip',['LaplacePsip',['../structsolovev_1_1mod_1_1_laplace_psip.html',1,'solovev::mod']]],
-  ['laplacepsip',['LaplacePsip',['../structtaylor_1_1_laplace_psip.html',1,'taylor']]],
+  ['laplacepsip',['LaplacePsip',['../structdg_1_1geo_1_1solovev_1_1_laplace_psip.html',1,'dg::geo::solovev']]],
+  ['laplacepsip',['LaplacePsip',['../structdg_1_1geo_1_1guenther_1_1_laplace_psip.html',1,'dg::geo::guenther']]],
+  ['laplacepsip',['LaplacePsip',['../structdg_1_1geo_1_1taylor_1_1_laplace_psip.html',1,'dg::geo::taylor']]],
   ['linearx',['LinearX',['../../../../inc/dg/html/structdg_1_1_linear_x.html',1,'dg']]],
   ['lineary',['LinearY',['../../../../inc/dg/html/structdg_1_1_linear_y.html',1,'dg']]],
   ['linearz',['LinearZ',['../../../../inc/dg/html/structdg_1_1_linear_z.html',1,'dg']]],
-  ['liseikin_5fxx',['Liseikin_XX',['../structdg_1_1_liseikin___x_x.html',1,'dg']]],
-  ['liseikin_5fxy',['Liseikin_XY',['../structdg_1_1_liseikin___x_y.html',1,'dg']]],
-  ['liseikin_5fyy',['Liseikin_YY',['../structdg_1_1_liseikin___y_y.html',1,'dg']]],
-  ['liseikincollective',['LiseikinCollective',['../structdg_1_1_liseikin_collective.html',1,'dg']]],
+  ['liseikin_5fxx',['Liseikin_XX',['../structdg_1_1geo_1_1_liseikin___x_x.html',1,'dg::geo']]],
+  ['liseikin_5fxy',['Liseikin_XY',['../structdg_1_1geo_1_1_liseikin___x_y.html',1,'dg::geo']]],
+  ['liseikin_5fyy',['Liseikin_YY',['../structdg_1_1geo_1_1_liseikin___y_y.html',1,'dg::geo']]],
+  ['liseikincollective',['LiseikinCollective',['../structdg_1_1geo_1_1_liseikin_collective.html',1,'dg::geo']]],
   ['ln',['LN',['../../../../inc/dg/html/structdg_1_1_l_n.html',1,'dg']]],
-  ['lnb',['LnB',['../structsolovev_1_1_ln_b.html',1,'solovev']]],
-  ['lnb',['LnB',['../structguenther_1_1_ln_b.html',1,'guenther']]]
+  ['lnb',['LnB',['../structdg_1_1geo_1_1_ln_b.html',1,'dg::geo']]]
 ];

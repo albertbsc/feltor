@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -153,11 +152,9 @@ Inheritance diagram for dg::MPIGrid2d:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae2a7147eb3431a5e2a859b944dc9aa50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2a7147eb3431a5e2a859b944dc9aa50"></a>
-typedef <a class="el" href="structdg_1_1_m_p_i_tag.html">MPITag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>memory_category</b></td></tr>
+<tr class="memitem:ae2a7147eb3431a5e2a859b944dc9aa50"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_m_p_i_tag.html">MPITag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_grid2d.html#ae2a7147eb3431a5e2a859b944dc9aa50">memory_category</a></td></tr>
 <tr class="separator:ae2a7147eb3431a5e2a859b944dc9aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92450ff04bff7a16808188de9989f013"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92450ff04bff7a16808188de9989f013"></a>
-typedef <a class="el" href="structdg_1_1_two_dimensional_tag.html">TwoDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dimensionality</b></td></tr>
+<tr class="memitem:a92450ff04bff7a16808188de9989f013"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_two_dimensional_tag.html">TwoDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_grid2d.html#a92450ff04bff7a16808188de9989f013">dimensionality</a></td></tr>
 <tr class="separator:a92450ff04bff7a16808188de9989f013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -231,15 +228,39 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a1ad827964d531af4303d9b50a36e369d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad827964d531af4303d9b50a36e369d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b> (double global_x0, double global_x1)</td></tr>
+<tr class="memitem:a1ad827964d531af4303d9b50a36e369d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i_grid2d.html#a1ad827964d531af4303d9b50a36e369d">init_X_boundaries</a> (double global_x0, double global_x1)</td></tr>
 <tr class="separator:a1ad827964d531af4303d9b50a36e369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2D MPI Grid class </p>
 <p>Represents the local grid coordinates and the process topology. It just divides the given (global) box into nonoverlapping (local) subboxes that are attributed to each process </p><dl class="section attention"><dt>Attention</dt><dd>The boundaries in the constructors are global boundaries, the boundaries returned by the access functions are local boundaries, this is because the grid represents the information given to one process</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Note that a single cell is never divided across processes. </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a92450ff04bff7a16808188de9989f013"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_two_dimensional_tag.html">TwoDimensionalTag</a> <a class="el" href="structdg_1_1_m_p_i_grid2d.html#a92450ff04bff7a16808188de9989f013">dg::MPIGrid2d::dimensionality</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2a7147eb3431a5e2a859b944dc9aa50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_m_p_i_tag.html">MPITag</a> <a class="el" href="structdg_1_1_m_p_i_grid2d.html#ae2a7147eb3431a5e2a859b944dc9aa50">dg::MPIGrid2d::memory_category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a06c3e7ecff7e994a2f36760f4da639e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -639,6 +660,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b>
 
 </div>
 </div>
+<a class="anchor" id="a1ad827964d531af4303d9b50a36e369d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::MPIGrid2d::init_X_boundaries </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>global_x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>global_x1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a69ad1d2e5e9ab31ea2a1f5de065069f0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -971,7 +1026,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i_grid2d.html">MPIGrid2d</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

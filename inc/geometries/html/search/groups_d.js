@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utilities',['Utilities',['../../../../inc/toefl/html/group__utilities_x.html',1,'']]]
+  ['numerical_20schemes',['Numerical schemes',['../../../../inc/toefl/html/group__algorithms.html',1,'']]]
 ];

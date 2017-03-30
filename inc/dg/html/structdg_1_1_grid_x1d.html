@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -140,14 +139,21 @@ $(document).ready(function(){initNavTree('structdg_1_1_grid_x1d.html','');});
  <a href="structdg_1_1_grid_x1d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="grid_x_8h_source.html">gridX.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for dg::GridX1d:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structdg_1_1_grid_x1d.png" usemap="#dg::GridX1d_map" alt=""/>
+  <map id="dg::GridX1d_map" name="dg::GridX1d_map">
+<area href="structdg_1_1_cartesian_grid_x1d.html" title="one-dimensional Grid with Cartesian metric " alt="dg::CartesianGridX1d" shape="rect" coords="0,56,133,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad095bcf302f2fdce324bc5ab20064ae4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad095bcf302f2fdce324bc5ab20064ae4"></a>
-typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>memory_category</b></td></tr>
+<tr class="memitem:ad095bcf302f2fdce324bc5ab20064ae4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#ad095bcf302f2fdce324bc5ab20064ae4">memory_category</a></td></tr>
 <tr class="separator:ad095bcf302f2fdce324bc5ab20064ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7721702e2488b7f6acea81687fb39f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7721702e2488b7f6acea81687fb39f2"></a>
-typedef <a class="el" href="structdg_1_1_one_dimensional_tag.html">OneDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dimensionality</b></td></tr>
+<tr class="memitem:ad7721702e2488b7f6acea81687fb39f2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structdg_1_1_one_dimensional_tag.html">OneDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#ad7721702e2488b7f6acea81687fb39f2">dimensionality</a></td></tr>
 <tr class="separator:ad7721702e2488b7f6acea81687fb39f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -191,11 +197,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab23cab026bca24bd9de013a933098f4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#ab23cab026bca24bd9de013a933098f4b">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:ab23cab026bca24bd9de013a933098f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the discrete legendre transformation  <a href="#ab23cab026bca24bd9de013a933098f4b">More...</a><br /></td></tr>
 <tr class="separator:ab23cab026bca24bd9de013a933098f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0354c5d757018b1b257d066c30431e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb0354c5d757018b1b257d066c30431e"></a>
-const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>dlt</b> () const </td></tr>
+<tr class="memitem:afb0354c5d757018b1b257d066c30431e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#afb0354c5d757018b1b257d066c30431e">dlt</a> () const </td></tr>
 <tr class="separator:afb0354c5d757018b1b257d066c30431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a874d2f02a9b13ea213fa1a93dd6a97ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a874d2f02a9b13ea213fa1a93dd6a97ce"></a>
-<a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>grid</b> () const </td></tr>
+<tr class="memitem:a874d2f02a9b13ea213fa1a93dd6a97ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#a874d2f02a9b13ea213fa1a93dd6a97ce">grid</a> () const </td></tr>
 <tr class="separator:a874d2f02a9b13ea213fa1a93dd6a97ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca03c4cd99293d6e7d9922b7a5ddf809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid_x1d.html#aca03c4cd99293d6e7d9922b7a5ddf809">shift_topologic</a> (double <a class="el" href="structdg_1_1_grid_x1d.html#a63341171e83cae1b6ee344535aa924e8">x0</a>, double &amp;<a class="el" href="structdg_1_1_grid_x1d.html#ad4f6db373324be4c0b5176e2b367dffd">x1</a>) const </td></tr>
 <tr class="memdesc:aca03c4cd99293d6e7d9922b7a5ddf809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts a point coordinate due to topology.  <a href="#aca03c4cd99293d6e7d9922b7a5ddf809">More...</a><br /></td></tr>
@@ -206,8 +210,33 @@ const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>1D grid for X-point topology </p>
-<p>The grid looks like |---&mdash;x-------&mdash;x---&mdash;| , where the x indicates the periodicity and - the number of points The left boundary is x0 and the right x1, the inner boundaries lie at x0 + f*Lx and x1-f*Lx therefore f must be smaller than 0.5 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>The grid looks like </p><div class="fragment"><div class="line">|------x----------x------|</div></div><!-- fragment --><p> , where the x indicates the periodicity and - the number of points The left boundary is x0 and the right x1, the inner boundaries lie at x0 + f*Lx and x1-f*Lx therefore f must be smaller than 0.5 </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ad7721702e2488b7f6acea81687fb39f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_one_dimensional_tag.html">OneDimensionalTag</a> <a class="el" href="structdg_1_1_grid_x1d.html#ad7721702e2488b7f6acea81687fb39f2">dg::GridX1d::dimensionality</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad095bcf302f2fdce324bc5ab20064ae4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a> <a class="el" href="structdg_1_1_grid_x1d.html#ad095bcf302f2fdce324bc5ab20064ae4">dg::GridX1d::memory_category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a89aa4ded1b6d7f1ebb572a6d34f78b4b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -373,6 +402,29 @@ const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&
 
 </div>
 </div>
+<a class="anchor" id="afb0354c5d757018b1b257d066c30431e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt;double&gt;&amp; dg::GridX1d::dlt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a40e79964ef1aec506ece574b201b57dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -396,6 +448,29 @@ const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&
 
 <p>Factor. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a874d2f02a9b13ea213fa1a93dd6a97ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> dg::GridX1d::grid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -685,7 +760,7 @@ const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_grid_x1d.html">GridX1d</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -143,9 +142,8 @@ $(document).ready(function(){initNavTree('structdg_1_1_d_s.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a013ea66911d8b0ff7984385513f211bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a013ea66911d8b0ff7984385513f211bf"></a>
-typedef FA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf">FieldAligned</a></td></tr>
-<tr class="memdesc:a013ea66911d8b0ff7984385513f211bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for easier construction of corresponding fieldaligned object <br /></td></tr>
+<tr class="memitem:a013ea66911d8b0ff7984385513f211bf"><td class="memItemLeft" align="right" valign="top">typedef FA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf">FieldAligned</a></td></tr>
+<tr class="memdesc:a013ea66911d8b0ff7984385513f211bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef for easier construction of corresponding fieldaligned object  <a href="#a013ea66911d8b0ff7984385513f211bf">More...</a><br /></td></tr>
 <tr class="separator:a013ea66911d8b0ff7984385513f211bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -223,7 +221,24 @@ struct dg::DS&lt; FA, Matrix, container &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a013ea66911d8b0ff7984385513f211bf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FA , class Matrix , class container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef FA <a class="el" href="structdg_1_1_d_s.html">dg::DS</a>&lt; FA, Matrix, container &gt;::<a class="el" href="structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf">FieldAligned</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>typedef for easier construction of corresponding fieldaligned object </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a67d4bc919abe93e7fc18abd7d8cc032a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +289,6 @@ template&lt;class InvB &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">InvB</td><td>The inverse magnitude of the magnetic field \( \frac{1}{B}\) </td></tr>
-    <tr><td class="paramname">Grid</td><td>Grid Class </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,9 +296,9 @@ template&lt;class InvB &gt; </div>
   <table class="params">
     <tr><td class="paramname">field</td><td>The fieldaligned object containing interpolation matrices </td></tr>
     <tr><td class="paramname">invB</td><td>The inverse magentic field strength </td></tr>
-    <tr><td class="paramname">grid</td><td>The grid on which to operate </td></tr>
     <tr><td class="paramname">no</td><td>norm or not_normed affects the behaviour of the symv function </td></tr>
     <tr><td class="paramname">dir</td><td>the direction affects both the operator() and the symv function </td></tr>
+    <tr><td class="paramname">jumpX</td><td>determines if a jump matrix is added in X-direction </td></tr>
   </table>
   </dd>
 </dl>
@@ -992,7 +1006,7 @@ template&lt;class FA , class Matrix , class container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_d_s.html">DS</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

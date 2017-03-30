@@ -2,6 +2,7 @@ var searchData=
 [
   ['lamb',['Lamb',['../structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd',1,'dg::Lamb']]],
   ['last',['last',['../structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b',1,'dg::Karniadakis']]],
+  ['launch_5fmultiply_5fkernel',['launch_multiply_kernel',['../structdg_1_1_ell_sparse_block_mat_device.html#a96bb877eddf3d4dd3ddb29b30f922065',1,'dg::EllSparseBlockMatDevice::launch_multiply_kernel()'],['../structdg_1_1_coo_sparse_block_mat_device.html#ac0f3b832549a28b3cacd729ecf5542ef',1,'dg::CooSparseBlockMatDevice::launch_multiply_kernel()']]],
   ['lcm',['lcm',['../group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'dg']]],
   ['lilj',['lilj',['../group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5',1,'dg::create']]],
   ['linearx',['LinearX',['../structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c',1,'dg::LinearX']]],

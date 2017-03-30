@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -135,7 +134,10 @@ $(document).ready(function(){initNavTree('structdg_1_1_lamb.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole. ">Lamb</a> dipole.  
+<p>Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole . ">Lamb</a> dipole </p><p class="formulaDsp">
+\[ f(x,y) = \begin{cases} 2\lambda U J_1(\lambda r) / J_0(\gamma)\cos(\theta) \text{ for } r&lt;R \\ 0 \text{ else} \end{cases} \]
+</p>
+<p>.  
  <a href="structdg_1_1_lamb.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="functors_8h_source.html">functors.h</a>&gt;</code></p>
@@ -156,7 +158,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58b2ef1b7f2b2e8d4f049ab82a6f9d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole. ">Lamb</a> dipole. </p>
+<div class="textblock"><p>Functor returning a <a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole . ">Lamb</a> dipole </p><p class="formulaDsp">
+\[ f(x,y) = \begin{cases} 2\lambda U J_1(\lambda r) / J_0(\gamma)\cos(\theta) \text{ for } r&lt;R \\ 0 \text{ else} \end{cases} \]
+</p>
+<p>. </p>
+<p>with \( r = \sqrt{(x-x_0)^2 + (y-y_0)^2}\), \( \theta = \arctan_2( (y-y_), (x-x_0))\), \(J_0, J_1\) are Bessel functions of the first kind of order 0 and 1 and \(\lambda = \gamma/R\) with \( \gamma = 3.83170597020751231561\) </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8bbe13dcd12f398e0426f1c92388ecdd"></a>
 <div class="memitem">
@@ -238,7 +244,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The total energy of the dipole. </p>
-<p>Analytic formula. True for periodic and dirichlet boundary conditions. </p><dl class="section return"><dt>Returns</dt><dd>energy </dd></dl>
+<p>Analytic formula. True for periodic and dirichlet boundary conditions. </p><dl class="section return"><dt>Returns</dt><dd>energy \( 2\pi R^2U^2\) </dd></dl>
 
 </div>
 </div>
@@ -264,7 +270,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The total enstrophy of the dipole. </p>
-<p>Analytic formula. True for periodic and dirichlet boundary conditions. </p><dl class="section return"><dt>Returns</dt><dd>enstrophy </dd></dl>
+<p>Analytic formula. True for periodic and dirichlet boundary conditions. </p><dl class="section return"><dt>Returns</dt><dd>enstrophy \( \pi U^2\gamma^2\) </dd></dl>
 
 </div>
 </div>
@@ -308,7 +314,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole. ">Lamb</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structdg_1_1_lamb.html" title="Functor returning a Lamb dipole . ">Lamb</a> </dd></dl>
 
 </div>
 </div>
@@ -321,7 +327,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_lamb.html">Lamb</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

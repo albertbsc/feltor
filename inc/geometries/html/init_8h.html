@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -130,88 +130,78 @@ $(document).ready(function(){initNavTree('init_8h.html','');});
 <div class="title">init.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="solovev__parameters_8h_source.html">solovev_parameters.h</a>&quot;</code><br />
+</div>
 <p><a href="init_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_iris.html">solovev::Iris</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_iris.html">dg::geo::Iris&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmax and inside psipmin, otherwise 1 </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structsolovev_1_1_iris.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_iris.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_pupil.html">solovev::Pupil</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_pupil.html">dg::geo::Pupil&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns zero outside psipmaxcut otherwise 1 </p><p class="formulaDsp">
 \[ \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxcut} \\ 1 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structsolovev_1_1_pupil.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_pupil.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_psi_pupil.html">solovev::PsiPupil</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_pupil.html">dg::geo::PsiPupil&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns psi inside psipmax and psipmax outside psipmax </p><p class="formulaDsp">
 \[ \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structsolovev_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_psi_pupil.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_psi_limiter.html">solovev::PsiLimiter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_psi_limiter.html">dg::geo::PsiLimiter&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets values to one outside psipmaxcut, zero else </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxlim} \\ 0 \text{ else} \end{cases}\]
 </p>
-<p>.  <a href="structsolovev_1_1_psi_limiter.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_psi_limiter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_gaussian_damping.html">solovev::GaussianDamping</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_damping.html">dg::geo::GaussianDamping&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the outer boundary in a zone from psipmaxcut to psipmaxcut+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; \psi_{p,max,cut}\\ 0 \text{ if } \psi_p(R,Z) &gt; (\psi_{p,max,cut} + 4\alpha) \\ \exp\left( - \frac{(\psi_p - \psi_{p,max,cut})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
 </p>
-<p>.  <a href="structsolovev_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_gaussian_damping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_gaussian_prof_damping.html">solovev::GaussianProfDamping</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_damping.html">dg::geo::GaussianProfDamping&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha)\\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \exp\left( - \frac{(\psi_p - \psi_{p,max} + 4\alpha)^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
 </p>
-<p>.  <a href="structsolovev_1_1_gaussian_prof_damping.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_damping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_gaussian_prof_x_damping.html">solovev::GaussianProfXDamping</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html">dg::geo::GaussianProfXDamping&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damps the inner boundary in a zone from psipmax to psipmax+ 4*alpha with a normal distribution Returns 1 inside, zero outside and a gaussian within Additionally cuts if Z &lt; Z_xpoint </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_p(R,Z) &lt; (\psi_{p,max} - 4\alpha) \\ 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} || Z &lt; -1.1\varepsilon a \\ \exp\left( - \frac{(\psi_p - \psi_{p,max})^2}{2\alpha^2}\right), \text{ else} \end{cases} \]
 </p>
-<p>.  <a href="structsolovev_1_1_gaussian_prof_x_damping.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_gaussian_prof_x_damping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_tanh_source.html">solovev::TanhSource</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_tanh_source.html">dg::geo::TanhSource&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
 \[ 0.5\left( 1 + \tanh\left( -\frac{\psi_p(R,Z) - \psi_{p,min} + 3\alpha}{\alpha}\right)\right) \]
 </p>
-  <a href="structsolovev_1_1_tanh_source.html#details">More...</a><br /></td></tr>
+  <a href="structdg_1_1geo_1_1_tanh_source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_nprofile.html">solovev::Nprofile</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_nprofile.html">dg::geo::Nprofile&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns density profile with variable peak amplitude and background amplitude </p><p class="formulaDsp">
 \[ N(R,Z)=\begin{cases} A_{bg} + A_{peak}\frac{\psi_p(R,Z)} {\psi_p(R_0, 0)} \text{ if }\psi_p &lt; \psi_{p,max} \\ A_{bg} \text{ else } \end{cases} \]
 </p>
-<p>.  <a href="structsolovev_1_1_nprofile.html#details">More...</a><br /></td></tr>
+<p>.  <a href="structdg_1_1geo_1_1_nprofile.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_zonal_flow.html">solovev::ZonalFlow</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1geo_1_1_zonal_flow.html">dg::geo::ZonalFlow&lt; Psi &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns zonal flow field </p><p class="formulaDsp">
 \[ N(R,Z)=\begin{cases} A_{bg} |\cos(2\pi\psi_p(R,Z) k_\psi)| \text{ if }\psi_p &lt; \psi_{p,max} \\ 0 \text{ else } \end{cases} \]
 </p>
-  <a href="structsolovev_1_1_zonal_flow.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_test_function.html">solovev::TestFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">testfunction to test the parallel derivative </p><p class="formulaDsp">
-\[ f(R,Z,\varphi) = -\frac{\cos(\varphi)}{R\hat b_\varphi} \]
-</p>
-  <a href="structsolovev_1_1_test_function.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_deri_test_function.html">solovev::DeriTestFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">analyitcal solution of the parallel derivative of the testfunction </p><p class="formulaDsp">
-\[ \nabla_\parallel(R,Z,\varphi) f = \frac{\sin(\varphi)}{R}\]
-</p>
-  <a href="structsolovev_1_1_deri_test_function.html#details">More...</a><br /></td></tr>
+  <a href="structdg_1_1geo_1_1_zonal_flow.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacesolovev"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesolovev.html">solovev</a></td></tr>
-<tr class="memdesc:namespacesolovev"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for a solvev magnetic flux. <br /></td></tr>
+<tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -222,7 +212,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_5b85b054eaae83068f60d9ca3773e17d.html">geometries</a></li><li class="navelem"><a class="el" href="init_8h.html">init.h</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:36 for Geometry by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:20 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

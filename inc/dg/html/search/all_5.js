@@ -10,6 +10,7 @@ var searchData=
   ['fhvec',['fHVec',['../group__typedefs.html#ga7db4ee2dcdf21eda52e0e0c80f2e8ff5',1,'dg']]],
   ['fieldaligned',['FieldAligned',['../structdg_1_1_field_aligned.html',1,'dg']]],
   ['fieldaligned',['FieldAligned',['../structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf',1,'dg::DS::FieldAligned()'],['../structdg_1_1_field_aligned.html#ace99b0fc621a942f1e7c0677200f19f6',1,'dg::FieldAligned::FieldAligned()'],['../structdg_1_1_d_s.html#acf15e8b43140440b6dbe5def4ccf1688',1,'dg::DS::fieldaligned()'],['../group__fieldaligned.html',1,'(Global Namespace)']]],
+  ['fieldaligned_2eh',['fieldaligned.h',['../fieldaligned_8h.html',1,'']]],
   ['fmdmatrix',['fMDMatrix',['../group__typedefs.html#gab51d1ff67fac106190dfe492c272aac6',1,'dg']]],
   ['fmdvec',['fMDVec',['../group__typedefs.html#gae792c3ecc48e6c8e79e371d8f7679f30',1,'dg']]],
   ['fmhmatrix',['fMHMatrix',['../group__typedefs.html#ga9f2af257770b91c23fa3bdffb2098d48',1,'dg']]],

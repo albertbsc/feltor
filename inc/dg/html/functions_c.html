@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -163,7 +162,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>CartesianGrid1d()
@@ -174,6 +173,24 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>CartesianGrid3d()
 : <a class="el" href="structdg_1_1_cartesian_grid3d.html#a285ed505d9b7d483d7e382a03ce6a5c2">dg::CartesianGrid3d</a>
+</li>
+<li>CartesianGridX1d()
+: <a class="el" href="structdg_1_1_cartesian_grid_x1d.html#a698058929089fdf237897893dfb441a1">dg::CartesianGridX1d</a>
+</li>
+<li>CartesianGridX2d()
+: <a class="el" href="structdg_1_1_cartesian_grid_x2d.html#ae72a107ceaa958cf373e136dedec21b8">dg::CartesianGridX2d</a>
+</li>
+<li>CartesianGridX3d()
+: <a class="el" href="structdg_1_1_cartesian_grid_x3d.html#abca854225782ccf63cd0e01ed02bd879">dg::CartesianGridX3d</a>
+</li>
+<li>CartesianMPIGrid2d()
+: <a class="el" href="structdg_1_1_cartesian_m_p_i_grid2d.html#a39dccb804ecb3f832aad50a4205113b3">dg::CartesianMPIGrid2d</a>
+</li>
+<li>CartesianMPIGrid3d()
+: <a class="el" href="structdg_1_1_cartesian_m_p_i_grid3d.html#ace88140cef7426b02309f20164c37e10">dg::CartesianMPIGrid3d</a>
+</li>
+<li>CartesianRefinedGrid2d()
+: <a class="el" href="structdg_1_1_cartesian_refined_grid2d.html#a45ea83d3d08c5329f503749b1b362fa2">dg::CartesianRefinedGrid2d&lt; container &gt;</a>
 </li>
 <li>Cauchy()
 : <a class="el" href="structdg_1_1_cauchy.html#a508cb8140a3505aeeac4af782e779d50">dg::Cauchy</a>
@@ -195,7 +212,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1_helmholtz.html#a6b1ffe5e120fedcc9415f75219c241cd">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
 </li>
 <li>ColDistMat()
-: <a class="el" href="structdg_1_1_col_dist_mat.html#a4297a483e3ad3f1a7128be73b1265a4d">dg::ColDistMat&lt; LocalMatrix, Collective &gt;</a>
+: <a class="el" href="structdg_1_1_col_dist_mat.html#a428f656cbf9f8786cbb65e71f00de48d">dg::ColDistMat&lt; LocalMatrix, Collective &gt;</a>
 </li>
 <li>collect()
 : <a class="el" href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">dg::BijectiveComm&lt; Index, Vector &gt;</a>
@@ -216,6 +233,9 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1_m_p_i_grid2d.html#a556c26a49f49d847e7e4dc7b06e81a37">dg::MPIGrid2d</a>
 , <a class="el" href="structdg_1_1_m_p_i_grid3d.html#a2dcd4fe264db41740d646f98991fd8e8">dg::MPIGrid3d</a>
 , <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#af66764f2258a99dc8362548dde0bd2b8">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+</li>
+<li>Composite()
+: <a class="el" href="structdg_1_1_composite.html#a6577805343b147cde57429aa6a31b045">dg::Composite&lt; Matrix &gt;</a>
 </li>
 <li>compute_rhs()
 : <a class="el" href="classdg_1_1_refined_elliptic.html#ab1857c62f3f484c783c2114d27449413">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
@@ -239,13 +259,16 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structdg_1_1_grid_x3d.html#a5ae6c123b455df607be0ca18926b9643">dg::GridX3d</a>
 </li>
 <li>CooSparseBlockMat()
-: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa24a0237ff6d15655372d7b8181b5b32">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#acce1f37c294317037956daa3bdf8b089">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 </li>
 <li>CooSparseBlockMatDevice()
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a1eeaedee4a9051a4dfdcfa4725d00b77">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 </li>
 <li>CylindricalGrid3d()
-: <a class="el" href="structdg_1_1_cylindrical_grid3d.html#a00ef88a85b0001aedfcb29b714a99a5d">dg::CylindricalGrid3d&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_cylindrical_grid3d.html#a666f49bd901a4860a34f5e6837de1a13">dg::CylindricalGrid3d&lt; container &gt;</a>
+</li>
+<li>CylindricalMPIGrid3d()
+: <a class="el" href="structdg_1_1_cylindrical_m_p_i_grid3d.html#a58bb1d6d60e287db5f2c614e06ce1a99">dg::CylindricalMPIGrid3d&lt; container &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -253,7 +276,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

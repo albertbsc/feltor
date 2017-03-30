@@ -2,7 +2,7 @@ var structdg_1_1_orthogonal_grid_x3d =
 [
     [ "metric_category", "structdg_1_1_orthogonal_grid_x3d.html#a9d14d77def4813eac0d2a548cbae5e36", null ],
     [ "perpendicular_grid", "structdg_1_1_orthogonal_grid_x3d.html#ab071d72de75168bbe9285ba1deff727b", null ],
-    [ "OrthogonalGridX3d", "structdg_1_1_orthogonal_grid_x3d.html#aad9d36b4dffb9bc4c87f876b8f4661bd", null ],
+    [ "OrthogonalGridX3d", "structdg_1_1_orthogonal_grid_x3d.html#ad80a2efbe50a690cbe625d16b83f68a9", null ],
     [ "g_pp", "structdg_1_1_orthogonal_grid_x3d.html#a9a17e569a0b4edf038c98a4e740f2fc3", null ],
     [ "g_xx", "structdg_1_1_orthogonal_grid_x3d.html#a9349da6687ea4a6384126879d71c525b", null ],
     [ "g_xy", "structdg_1_1_orthogonal_grid_x3d.html#a3a26d68c95430fee9ff04f47ee4f05d5", null ],

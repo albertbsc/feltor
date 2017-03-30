@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weight_20functions',['Weight functions',['../../../../inc/dg/html/group__highlevel.html',1,'']]]
+  ['root_20finding',['Root finding',['../../../../inc/dg/html/group__root.html',1,'']]]
 ];

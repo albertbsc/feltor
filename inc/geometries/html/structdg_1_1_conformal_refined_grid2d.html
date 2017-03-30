@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -131,9 +131,14 @@ $(document).ready(function(){initNavTree('structdg_1_1_conformal_refined_grid2d.
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_conformal_refined_grid2d-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::ConformalRefinedGrid2d&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__grids.html">Grids and grid generators</a></div></div>  </div>
+<div class="title">dg::ConformalRefinedGrid2d&lt; container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__grids.html">1. Grids</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A conformal refined grid.  
+ <a href="structdg_1_1_conformal_refined_grid2d.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="refined__conformal_8h_source.html">refined_conformal.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dg::ConformalRefinedGrid2d&lt; container &gt;:</div>
 <div class="dyncontent">
@@ -147,139 +152,509 @@ Inheritance diagram for dg::ConformalRefinedGrid2d&lt; container &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adba705ba2a20914dcdeb893ab01a7027"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adba705ba2a20914dcdeb893ab01a7027"></a>
-typedef <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_conformal_cylindrical_tag.html">dg::ConformalCylindricalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>metric_category</b></td></tr>
+<tr class="memitem:adba705ba2a20914dcdeb893ab01a7027"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_conformal_cylindrical_tag.html">dg::ConformalCylindricalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#adba705ba2a20914dcdeb893ab01a7027">metric_category</a></td></tr>
 <tr class="separator:adba705ba2a20914dcdeb893ab01a7027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structdg_1_1_grid2d"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structdg_1_1_grid2d')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../../inc/dg/html/structdg_1_1_grid2d.html">dg::Grid2d</a></td></tr>
+<tr class="memitem:a95154123fc0efe5135fa89546a7e82f0 inherit pub_types_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a95154123fc0efe5135fa89546a7e82f0">memory_category</a></td></tr>
+<tr class="separator:a95154123fc0efe5135fa89546a7e82f0 inherit pub_types_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0609c0bf3d93762e7297779749907b13 inherit pub_types_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_two_dimensional_tag.html">TwoDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a0609c0bf3d93762e7297779749907b13">dimensionality</a></td></tr>
+<tr class="separator:a0609c0bf3d93762e7297779749907b13 inherit pub_types_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06a97395b8756d36e5df2a1d1ec1aef3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a06a97395b8756d36e5df2a1d1ec1aef3"></a>
-template&lt;class Generator &gt; </td></tr>
-<tr class="memitem:a06a97395b8756d36e5df2a1d1ec1aef3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ConformalRefinedGrid2d</b> (unsigned multiple_x, unsigned multiple_y, const Generator &amp;generator, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned n_old, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>)</td></tr>
+<tr class="memitem:a06a97395b8756d36e5df2a1d1ec1aef3"><td class="memTemplParams" colspan="2">template&lt;class Generator &gt; </td></tr>
+<tr class="memitem:a06a97395b8756d36e5df2a1d1ec1aef3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a06a97395b8756d36e5df2a1d1ec1aef3">ConformalRefinedGrid2d</a> (unsigned multiple_x, unsigned multiple_y, const Generator &amp;generator, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned n_old, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>)</td></tr>
 <tr class="separator:a06a97395b8756d36e5df2a1d1ec1aef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2333af7a398429249d5b469015a4311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2333af7a398429249d5b469015a4311"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ConformalRefinedGrid2d</b> (const <a class="el" href="structdg_1_1_conformal_refined_grid3d.html">ConformalRefinedGrid3d</a>&lt; container &gt; &amp;g)</td></tr>
+<tr class="memitem:af2333af7a398429249d5b469015a4311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#af2333af7a398429249d5b469015a4311">ConformalRefinedGrid2d</a> (const <a class="el" href="structdg_1_1_conformal_refined_grid3d.html">ConformalRefinedGrid3d</a>&lt; container &gt; &amp;g)</td></tr>
 <tr class="separator:af2333af7a398429249d5b469015a4311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cde69c2c98d546f4df9d352efbeaec3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cde69c2c98d546f4df9d352efbeaec3"></a>
-const <a class="el" href="structdg_1_1_conformal_grid2d.html">dg::ConformalGrid2d</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>associated</b> () const </td></tr>
+<tr class="memitem:a3cde69c2c98d546f4df9d352efbeaec3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdg_1_1_conformal_grid2d.html">dg::ConformalGrid2d</a>&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a3cde69c2c98d546f4df9d352efbeaec3">associated</a> () const </td></tr>
 <tr class="separator:a3cde69c2c98d546f4df9d352efbeaec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dce6d310fd8385c4f77a4d940289f4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dce6d310fd8385c4f77a4d940289f4a"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>r</b> () const </td></tr>
+<tr class="memitem:a6dce6d310fd8385c4f77a4d940289f4a"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a6dce6d310fd8385c4f77a4d940289f4a">r</a> () const </td></tr>
 <tr class="separator:a6dce6d310fd8385c4f77a4d940289f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c924c080a76e8ea72f54080e894af3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c924c080a76e8ea72f54080e894af3a"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>z</b> () const </td></tr>
+<tr class="memitem:a2c924c080a76e8ea72f54080e894af3a"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a2c924c080a76e8ea72f54080e894af3a">z</a> () const </td></tr>
 <tr class="separator:a2c924c080a76e8ea72f54080e894af3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a228eab2672e52b78bb84f1aee0b427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a228eab2672e52b78bb84f1aee0b427"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>xr</b> () const </td></tr>
+<tr class="memitem:a2a228eab2672e52b78bb84f1aee0b427"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a2a228eab2672e52b78bb84f1aee0b427">xr</a> () const </td></tr>
 <tr class="separator:a2a228eab2672e52b78bb84f1aee0b427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe932d6fe1f41181c001262813b900c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fe932d6fe1f41181c001262813b900c"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>yr</b> () const </td></tr>
+<tr class="memitem:a7fe932d6fe1f41181c001262813b900c"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a7fe932d6fe1f41181c001262813b900c">yr</a> () const </td></tr>
 <tr class="separator:a7fe932d6fe1f41181c001262813b900c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7abcbb42d8909e1cc68ec00c0336284e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7abcbb42d8909e1cc68ec00c0336284e"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>xz</b> () const </td></tr>
+<tr class="memitem:a7abcbb42d8909e1cc68ec00c0336284e"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a7abcbb42d8909e1cc68ec00c0336284e">xz</a> () const </td></tr>
 <tr class="separator:a7abcbb42d8909e1cc68ec00c0336284e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc6c5f8a8bdec9b3f65af0de08f98f21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc6c5f8a8bdec9b3f65af0de08f98f21"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>yz</b> () const </td></tr>
+<tr class="memitem:abc6c5f8a8bdec9b3f65af0de08f98f21"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#abc6c5f8a8bdec9b3f65af0de08f98f21">yz</a> () const </td></tr>
 <tr class="separator:abc6c5f8a8bdec9b3f65af0de08f98f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaace08aa12c824565a17fc5d2be904f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaace08aa12c824565a17fc5d2be904f3"></a>
-const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>g_xx</b> () const </td></tr>
+<tr class="memitem:aaace08aa12c824565a17fc5d2be904f3"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#aaace08aa12c824565a17fc5d2be904f3">g_xx</a> () const </td></tr>
 <tr class="separator:aaace08aa12c824565a17fc5d2be904f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94acfa6525252bf5c1dbfe5b2de82d54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94acfa6525252bf5c1dbfe5b2de82d54"></a>
-const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>g_yy</b> () const </td></tr>
+<tr class="memitem:a94acfa6525252bf5c1dbfe5b2de82d54"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#a94acfa6525252bf5c1dbfe5b2de82d54">g_yy</a> () const </td></tr>
 <tr class="separator:a94acfa6525252bf5c1dbfe5b2de82d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab274229dbe78cfb55a5c9fdf6bc371cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab274229dbe78cfb55a5c9fdf6bc371cc"></a>
-const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vol</b> () const </td></tr>
+<tr class="memitem:ab274229dbe78cfb55a5c9fdf6bc371cc"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#ab274229dbe78cfb55a5c9fdf6bc371cc">vol</a> () const </td></tr>
 <tr class="separator:ab274229dbe78cfb55a5c9fdf6bc371cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac39731d1053b0d82e6a2323471ccbc9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac39731d1053b0d82e6a2323471ccbc9a"></a>
-const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>perpVol</b> () const </td></tr>
+<tr class="memitem:ac39731d1053b0d82e6a2323471ccbc9a"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html#ac39731d1053b0d82e6a2323471ccbc9a">perpVol</a> () const </td></tr>
 <tr class="separator:ac39731d1053b0d82e6a2323471ccbc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structdg_1_1_refined_grid2d"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structdg_1_1_refined_grid2d')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a></td></tr>
-<tr class="memitem:a5a3ed954f4285d4e6a8431303801dd95 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a3ed954f4285d4e6a8431303801dd95"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a5a3ed954f4285d4e6a8431303801dd95">RefinedGrid2d</a> (unsigned node_x, unsigned node_y, unsigned add_x, unsigned add_y, unsigned howmanyX, unsigned howmanyY, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
+<tr class="memitem:a5a3ed954f4285d4e6a8431303801dd95 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a5a3ed954f4285d4e6a8431303801dd95">RefinedGrid2d</a> (unsigned node_x, unsigned node_y, unsigned add_x, unsigned add_y, unsigned howmanyX, unsigned howmanyY, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
 <tr class="separator:a5a3ed954f4285d4e6a8431303801dd95 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a5931b79b05a2c182a79db89c64806 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8a5931b79b05a2c182a79db89c64806"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#aa8a5931b79b05a2c182a79db89c64806">RefinedGrid2d</a> (unsigned multiple_x, unsigned multiple_y, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned n_old, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
+<tr class="memitem:aa8a5931b79b05a2c182a79db89c64806 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#aa8a5931b79b05a2c182a79db89c64806">RefinedGrid2d</a> (unsigned multiple_x, unsigned multiple_y, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned n_old, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">dg::PER</a>)</td></tr>
 <tr class="separator:aa8a5931b79b05a2c182a79db89c64806 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ca6589bc2c4530ce5eb75556472f54b inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ca6589bc2c4530ce5eb75556472f54b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a1ca6589bc2c4530ce5eb75556472f54b">RefinedGrid2d</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g)</td></tr>
+<tr class="memitem:a1ca6589bc2c4530ce5eb75556472f54b inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a1ca6589bc2c4530ce5eb75556472f54b">RefinedGrid2d</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g)</td></tr>
 <tr class="separator:a1ca6589bc2c4530ce5eb75556472f54b inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af964919a30ff1e774a66392bdd1225fc inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af964919a30ff1e774a66392bdd1225fc"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#af964919a30ff1e774a66392bdd1225fc">abscissasX</a> () const </td></tr>
+<tr class="memitem:af964919a30ff1e774a66392bdd1225fc inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#af964919a30ff1e774a66392bdd1225fc">abscissasX</a> () const </td></tr>
 <tr class="separator:af964919a30ff1e774a66392bdd1225fc inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae400cb8c5621e02cda4a46b415f651f inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae400cb8c5621e02cda4a46b415f651f"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#aae400cb8c5621e02cda4a46b415f651f">abscissasY</a> () const </td></tr>
+<tr class="memitem:aae400cb8c5621e02cda4a46b415f651f inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#aae400cb8c5621e02cda4a46b415f651f">abscissasY</a> () const </td></tr>
 <tr class="separator:aae400cb8c5621e02cda4a46b415f651f inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dec12c2e780b7a03705be1c6535d36e inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9dec12c2e780b7a03705be1c6535d36e"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a9dec12c2e780b7a03705be1c6535d36e">weightsX</a> () const </td></tr>
+<tr class="memitem:a9dec12c2e780b7a03705be1c6535d36e inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a9dec12c2e780b7a03705be1c6535d36e">weightsX</a> () const </td></tr>
 <tr class="separator:a9dec12c2e780b7a03705be1c6535d36e inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f4419d3cc3a34bfdca0552f90d2761 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03f4419d3cc3a34bfdca0552f90d2761"></a>
-const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a03f4419d3cc3a34bfdca0552f90d2761">weightsY</a> () const </td></tr>
+<tr class="memitem:a03f4419d3cc3a34bfdca0552f90d2761 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">const thrust::host_vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a03f4419d3cc3a34bfdca0552f90d2761">weightsY</a> () const </td></tr>
 <tr class="separator:a03f4419d3cc3a34bfdca0552f90d2761 inherit pub_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structdg_1_1_grid2d"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structdg_1_1_grid2d')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../../inc/dg/html/structdg_1_1_grid2d.html">dg::Grid2d</a></td></tr>
-<tr class="memitem:aae333d585b691d23b864a0b65f41b372 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae333d585b691d23b864a0b65f41b372"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372">Grid2d</a> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>)</td></tr>
+<tr class="memitem:aae333d585b691d23b864a0b65f41b372 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372">Grid2d</a> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a>, unsigned <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a>=<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>)</td></tr>
 <tr class="separator:aae333d585b691d23b864a0b65f41b372 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd52e0ba30c6b27d5e410d6f95c6d6f0 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd52e0ba30c6b27d5e410d6f95c6d6f0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#acd52e0ba30c6b27d5e410d6f95c6d6f0">Grid2d</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid1d.html">Grid1d</a> &amp;gx, const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid1d.html">Grid1d</a> &amp;gy)</td></tr>
+<tr class="memitem:acd52e0ba30c6b27d5e410d6f95c6d6f0 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#acd52e0ba30c6b27d5e410d6f95c6d6f0">Grid2d</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid1d.html">Grid1d</a> &amp;gx, const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid1d.html">Grid1d</a> &amp;gy)</td></tr>
 <tr class="separator:acd52e0ba30c6b27d5e410d6f95c6d6f0 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab06439fc0705d18eec999ca96b538d inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeab06439fc0705d18eec999ca96b538d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a> () const </td></tr>
+<tr class="memitem:af3b834bc3f657a4ea29eab8652320027 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af3b834bc3f657a4ea29eab8652320027">Grid2d</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid3d.html">Grid3d</a> &amp;g)</td></tr>
+<tr class="separator:af3b834bc3f657a4ea29eab8652320027 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab06439fc0705d18eec999ca96b538d inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a> () const </td></tr>
 <tr class="separator:aeab06439fc0705d18eec999ca96b538d inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b76f23bdf2ac38d57b4f075151027a4 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b76f23bdf2ac38d57b4f075151027a4"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a> () const </td></tr>
+<tr class="memitem:a8b76f23bdf2ac38d57b4f075151027a4 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a> () const </td></tr>
 <tr class="separator:a8b76f23bdf2ac38d57b4f075151027a4 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad412fc7b233bf1004cb7a90b5903de45 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad412fc7b233bf1004cb7a90b5903de45"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a> () const </td></tr>
+<tr class="memitem:ad412fc7b233bf1004cb7a90b5903de45 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a> () const </td></tr>
 <tr class="separator:ad412fc7b233bf1004cb7a90b5903de45 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1368f614b7aa4dac154aa42de88bed02 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1368f614b7aa4dac154aa42de88bed02"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a> () const </td></tr>
+<tr class="memitem:a1368f614b7aa4dac154aa42de88bed02 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a> () const </td></tr>
 <tr class="separator:a1368f614b7aa4dac154aa42de88bed02 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a658afc23ae7c12ec3451a7915784c0ca inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a658afc23ae7c12ec3451a7915784c0ca"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a658afc23ae7c12ec3451a7915784c0ca">lx</a> () const </td></tr>
+<tr class="memitem:a658afc23ae7c12ec3451a7915784c0ca inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a658afc23ae7c12ec3451a7915784c0ca">lx</a> () const </td></tr>
 <tr class="separator:a658afc23ae7c12ec3451a7915784c0ca inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244b45fade5b110b531edfa53af359d6 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a244b45fade5b110b531edfa53af359d6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a244b45fade5b110b531edfa53af359d6">ly</a> () const </td></tr>
+<tr class="memitem:a244b45fade5b110b531edfa53af359d6 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a244b45fade5b110b531edfa53af359d6">ly</a> () const </td></tr>
 <tr class="separator:a244b45fade5b110b531edfa53af359d6 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd9e692cabb19187649d7968849581c6 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd9e692cabb19187649d7968849581c6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#acd9e692cabb19187649d7968849581c6">hx</a> () const </td></tr>
+<tr class="memitem:acd9e692cabb19187649d7968849581c6 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#acd9e692cabb19187649d7968849581c6">hx</a> () const </td></tr>
 <tr class="separator:acd9e692cabb19187649d7968849581c6 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841254f6a6377de8703d1b01d1d2fb98 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a841254f6a6377de8703d1b01d1d2fb98"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a841254f6a6377de8703d1b01d1d2fb98">hy</a> () const </td></tr>
+<tr class="memitem:a841254f6a6377de8703d1b01d1d2fb98 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a841254f6a6377de8703d1b01d1d2fb98">hy</a> () const </td></tr>
 <tr class="separator:a841254f6a6377de8703d1b01d1d2fb98 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117cd83688ffbd7d1f0f61d77daff257 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a117cd83688ffbd7d1f0f61d77daff257"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a> () const </td></tr>
+<tr class="memitem:a117cd83688ffbd7d1f0f61d77daff257 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a117cd83688ffbd7d1f0f61d77daff257">n</a> () const </td></tr>
 <tr class="separator:a117cd83688ffbd7d1f0f61d77daff257 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ad56279b8d34ab7467b1b252ce3b837 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad56279b8d34ab7467b1b252ce3b837"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a> () const </td></tr>
+<tr class="memitem:a1ad56279b8d34ab7467b1b252ce3b837 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1ad56279b8d34ab7467b1b252ce3b837">Nx</a> () const </td></tr>
 <tr class="separator:a1ad56279b8d34ab7467b1b252ce3b837 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11c2500193cd495b88d75263975b68a inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af11c2500193cd495b88d75263975b68a"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a> () const </td></tr>
+<tr class="memitem:af11c2500193cd495b88d75263975b68a inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#af11c2500193cd495b88d75263975b68a">Ny</a> () const </td></tr>
 <tr class="separator:af11c2500193cd495b88d75263975b68a inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d1ecc621c765141b14462b40b908d19 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d1ecc621c765141b14462b40b908d19"></a>
-<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a> () const </td></tr>
+<tr class="memitem:a9d1ecc621c765141b14462b40b908d19 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19">bcx</a> () const </td></tr>
 <tr class="separator:a9d1ecc621c765141b14462b40b908d19 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb132f221689301be98c1ca87f63f01d inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb132f221689301be98c1ca87f63f01d"></a>
-<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a> () const </td></tr>
+<tr class="memitem:afb132f221689301be98c1ca87f63f01d inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d">bcy</a> () const </td></tr>
 <tr class="separator:afb132f221689301be98c1ca87f63f01d inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedaf642eafb95d966245af85a60c952b inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedaf642eafb95d966245af85a60c952b"></a>
-<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html">Grid2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aedaf642eafb95d966245af85a60c952b">local_grid</a> () const </td></tr>
+<tr class="memitem:aedaf642eafb95d966245af85a60c952b inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html">Grid2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aedaf642eafb95d966245af85a60c952b">local_grid</a> () const </td></tr>
 <tr class="separator:aedaf642eafb95d966245af85a60c952b inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d42968158fe7c149bb7bb6d732fd1f inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d42968158fe7c149bb7bb6d732fd1f"></a>
-const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a23d42968158fe7c149bb7bb6d732fd1f">dlt</a> () const </td></tr>
+<tr class="memitem:a23d42968158fe7c149bb7bb6d732fd1f inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a23d42968158fe7c149bb7bb6d732fd1f">dlt</a> () const </td></tr>
 <tr class="separator:a23d42968158fe7c149bb7bb6d732fd1f inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7da9c5118a17509d46a957407bff1e2 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7da9c5118a17509d46a957407bff1e2"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ab7da9c5118a17509d46a957407bff1e2">size</a> () const </td></tr>
+<tr class="memitem:ab7da9c5118a17509d46a957407bff1e2 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ab7da9c5118a17509d46a957407bff1e2">size</a> () const </td></tr>
 <tr class="separator:ab7da9c5118a17509d46a957407bff1e2 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72835325c7e3cc7488e4af92e754c0a inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad72835325c7e3cc7488e4af92e754c0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad72835325c7e3cc7488e4af92e754c0a">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
+<tr class="memitem:ad72835325c7e3cc7488e4af92e754c0a inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad72835325c7e3cc7488e4af92e754c0a">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="separator:ad72835325c7e3cc7488e4af92e754c0a inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1d1dcb785a6949d01a20ff4db46771 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b1d1dcb785a6949d01a20ff4db46771"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b1d1dcb785a6949d01a20ff4db46771">shift_topologic</a> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double &amp;<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double &amp;<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>) const </td></tr>
+<tr class="memitem:a8b1d1dcb785a6949d01a20ff4db46771 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b1d1dcb785a6949d01a20ff4db46771">shift_topologic</a> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#ad412fc7b233bf1004cb7a90b5903de45">y0</a>, double &amp;<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>, double &amp;<a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a1368f614b7aa4dac154aa42de88bed02">y1</a>) const </td></tr>
 <tr class="separator:a8b1d1dcb785a6949d01a20ff4db46771 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58bc4eaf6c47706c277fef1ee6831ef4 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58bc4eaf6c47706c277fef1ee6831ef4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a58bc4eaf6c47706c277fef1ee6831ef4">contains</a> (double x, double y) const </td></tr>
+<tr class="memitem:a58bc4eaf6c47706c277fef1ee6831ef4 inherit pub_methods_structdg_1_1_grid2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a58bc4eaf6c47706c277fef1ee6831ef4">contains</a> (double x, double y) const </td></tr>
 <tr class="separator:a58bc4eaf6c47706c277fef1ee6831ef4 inherit pub_methods_structdg_1_1_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_structdg_1_1_refined_grid2d"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structdg_1_1_refined_grid2d')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a></td></tr>
+<tr class="memitem:aa475428bf36e878d2296ba947f8bba20 inherit pro_methods_structdg_1_1_refined_grid2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#aa475428bf36e878d2296ba947f8bba20">init_X_boundaries</a> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#aeab06439fc0705d18eec999ca96b538d">x0</a>, double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html#a8b76f23bdf2ac38d57b4f075151027a4">x1</a>)</td></tr>
+<tr class="separator:aa475428bf36e878d2296ba947f8bba20 inherit pro_methods_structdg_1_1_refined_grid2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class container&gt;<br />
+struct dg::ConformalRefinedGrid2d&lt; container &gt;</h3>
+
+<p>A conformal refined grid. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="adba705ba2a20914dcdeb893ab01a7027"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_conformal_cylindrical_tag.html">dg::ConformalCylindricalTag</a> <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::<a class="el" href="structdg_1_1_conformal_refined_grid2d.html#adba705ba2a20914dcdeb893ab01a7027">metric_category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a06a97395b8756d36e5df2a1d1ec1aef3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<div class="memtemplate">
+template&lt;class Generator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::<a class="el" href="structdg_1_1_conformal_refined_grid2d.html">ConformalRefinedGrid2d</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>multiple_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>multiple_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Generator &amp;&#160;</td>
+          <td class="paramname"><em>generator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n_old</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
+          <td class="paramname"><em>bcx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2333af7a398429249d5b469015a4311"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::<a class="el" href="structdg_1_1_conformal_refined_grid2d.html">ConformalRefinedGrid2d</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_conformal_refined_grid3d.html">ConformalRefinedGrid3d</a>&lt; container &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3cde69c2c98d546f4df9d352efbeaec3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structdg_1_1_conformal_grid2d.html">dg::ConformalGrid2d</a>&lt;container&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::associated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html#a2c1afccf67717abf5c624e17a7559287">dg::RefinedGrid2d</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaace08aa12c824565a17fc5d2be904f3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::g_xx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94acfa6525252bf5c1dbfe5b2de82d54"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::g_yy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac39731d1053b0d82e6a2323471ccbc9a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::perpVol </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6dce6d310fd8385c4f77a4d940289f4a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::r </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab274229dbe78cfb55a5c9fdf6bc371cc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::vol </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a228eab2672e52b78bb84f1aee0b427"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::xr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7abcbb42d8909e1cc68ec00c0336284e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::xz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fe932d6fe1f41181c001262813b900c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::yr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc6c5f8a8bdec9b3f65af0de08f98f21"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::yz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c924c080a76e8ea72f54080e894af3a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const thrust::host_vector&lt;double&gt;&amp; <a class="el" href="structdg_1_1_conformal_refined_grid2d.html">dg::ConformalRefinedGrid2d</a>&lt; container &gt;::z </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/matthias/feltor/inc/geometries/<a class="el" href="refined__conformal_8h_source.html">refined_conformal.h</a></li>
 </ul>
@@ -289,7 +664,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_conformal_refined_grid2d.html">ConformalRefinedGrid2d</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:36 for Geometry by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:20 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

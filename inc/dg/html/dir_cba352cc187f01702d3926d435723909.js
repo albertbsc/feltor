@@ -9,7 +9,7 @@ var dir_cba352cc187f01702d3926d435723909 =
     [ "blas1.h", "blas1_8h.html", "blas1_8h" ],
     [ "blas2.h", "blas2_8h.html", "blas2_8h" ],
     [ "cg.h", "cg_8h.html", null ],
-    [ "dg_doc.h", "dg__doc_8h_source.html", null ],
+    [ "dg_doc.h", "dg__doc_8h.html", null ],
     [ "ds.h", "ds_8h.html", "ds_8h" ],
     [ "elliptic.h", "elliptic_8h.html", null ],
     [ "enums.h", "enums_8h.html", "enums_8h" ],
@@ -17,6 +17,9 @@ var dir_cba352cc187f01702d3926d435723909 =
     [ "functors.h", "functors_8h.html", null ],
     [ "geometry.h", "geometry_8h.html", "geometry_8h" ],
     [ "helmholtz.h", "helmholtz_8h.html", null ],
+    [ "multigrid.h", "multigrid_8h.html", [
+      [ "VCycle", "structdg_1_1_v_cycle.html", "structdg_1_1_v_cycle" ]
+    ] ],
     [ "multistep.h", "multistep_8h.html", null ],
     [ "nullstelle.h", "nullstelle_8h.html", "nullstelle_8h" ],
     [ "poisson.h", "poisson_8h.html", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrix_20inversion',['Matrix inversion',['../../../../inc/dg/html/group__invert.html',1,'']]],
-  ['mpi_20backend_20functionality',['MPI backend functionality',['../../../../inc/dg/html/group__mpi__structures.html',1,'']]]
+  ['discretization_20of_20poisson_20bracket',['Discretization of Poisson bracket',['../../../../inc/dg/html/group__arakawa.html',1,'']]],
+  ['discrete_20derivatives',['Discrete derivatives',['../../../../inc/dg/html/group__creation.html',1,'']]]
 ];

@@ -1,6 +1,5 @@
 var group__grids =
 [
-    [ "Grid generators", "group__generators.html", "group__generators" ],
     [ "ConformalGrid3d", "structdg_1_1_conformal_grid3d.html", [
       [ "metric_category", "structdg_1_1_conformal_grid3d.html#a9fca4c00310407879db5c9be1f18113a", null ],
       [ "perpendicular_grid", "structdg_1_1_conformal_grid3d.html#acf0e8ae8e5bce1cadd755786da572c66", null ],
@@ -20,7 +19,7 @@ var group__grids =
     ] ],
     [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html", [
       [ "metric_category", "structdg_1_1_conformal_grid2d.html#a47e1309664fc5382d3b0f35f5ab489c3", null ],
-      [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#ae805ee2334021d5e69d1d6c063894bb8", null ],
+      [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#acafc551a4089f76a9162cc42e6c41066", null ],
       [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html#a3531da445e7682fd301b0e306c57c54a", null ],
       [ "g_xx", "structdg_1_1_conformal_grid2d.html#ac5c9a61b02433ea9786c63853c10f1e6", null ],
       [ "g_yy", "structdg_1_1_conformal_grid2d.html#a044df33eae0a02de2b75a91731e46142", null ],
@@ -240,7 +239,7 @@ var group__grids =
     [ "OrthogonalGridX3d", "structdg_1_1_orthogonal_grid_x3d.html", [
       [ "metric_category", "structdg_1_1_orthogonal_grid_x3d.html#a9d14d77def4813eac0d2a548cbae5e36", null ],
       [ "perpendicular_grid", "structdg_1_1_orthogonal_grid_x3d.html#ab071d72de75168bbe9285ba1deff727b", null ],
-      [ "OrthogonalGridX3d", "structdg_1_1_orthogonal_grid_x3d.html#aad9d36b4dffb9bc4c87f876b8f4661bd", null ],
+      [ "OrthogonalGridX3d", "structdg_1_1_orthogonal_grid_x3d.html#ad80a2efbe50a690cbe625d16b83f68a9", null ],
       [ "g_pp", "structdg_1_1_orthogonal_grid_x3d.html#a9a17e569a0b4edf038c98a4e740f2fc3", null ],
       [ "g_xx", "structdg_1_1_orthogonal_grid_x3d.html#a9349da6687ea4a6384126879d71c525b", null ],
       [ "g_xy", "structdg_1_1_orthogonal_grid_x3d.html#a3a26d68c95430fee9ff04f47ee4f05d5", null ],
@@ -376,5 +375,42 @@ var group__grids =
       [ "yr", "structdg_1_1_orthogonal_refined_grid2d.html#a39830b05f6862b2b57fdcd0974b7652f", null ],
       [ "yz", "structdg_1_1_orthogonal_refined_grid2d.html#afa6a6283c209599ca0f3a2a881e231a0", null ],
       [ "z", "structdg_1_1_orthogonal_refined_grid2d.html#acd6901ad0dc1d9b5f817ffd3ba7dde76", null ]
+    ] ],
+    [ "OrthogonalRefinedGridX3d", "structdg_1_1_orthogonal_refined_grid_x3d.html", [
+      [ "metric_category", "structdg_1_1_orthogonal_refined_grid_x3d.html#ae0438202a54f598fd52dcb67c3112216", null ],
+      [ "perpendicular_grid", "structdg_1_1_orthogonal_refined_grid_x3d.html#adc99fa8ae0ecd9d8583497d1f7f6d5ed", null ],
+      [ "OrthogonalRefinedGridX3d", "structdg_1_1_orthogonal_refined_grid_x3d.html#a07ec26b5011be9131b3b0c5d54029fdb", null ],
+      [ "associated", "structdg_1_1_orthogonal_refined_grid_x3d.html#a9b4cd2fe49fae150b650d7b888ada9e0", null ],
+      [ "g_pp", "structdg_1_1_orthogonal_refined_grid_x3d.html#a3fefef695b1d4733ee2e7389c84df89a", null ],
+      [ "g_xx", "structdg_1_1_orthogonal_refined_grid_x3d.html#afb95a25407bce32d856e26be800beeda", null ],
+      [ "g_xy", "structdg_1_1_orthogonal_refined_grid_x3d.html#a6eea55004facbd175caa38710541e995", null ],
+      [ "g_yy", "structdg_1_1_orthogonal_refined_grid_x3d.html#a17651e23f7536eff9f50c4a642626a4c", null ],
+      [ "perp_grid", "structdg_1_1_orthogonal_refined_grid_x3d.html#a967533360bd8a3c4ac120d22dfc4d564", null ],
+      [ "perpVol", "structdg_1_1_orthogonal_refined_grid_x3d.html#a832b72d91c5793dd76029b1a781bcf4c", null ],
+      [ "r", "structdg_1_1_orthogonal_refined_grid_x3d.html#a2d37a8bc08b78fe35269c60bafc02c10", null ],
+      [ "vol", "structdg_1_1_orthogonal_refined_grid_x3d.html#a03a272a09d5b2d793be8be8dab9d8f0e", null ],
+      [ "xr", "structdg_1_1_orthogonal_refined_grid_x3d.html#aad68219f5dd8d96d822cb20e61c7e2e8", null ],
+      [ "xz", "structdg_1_1_orthogonal_refined_grid_x3d.html#ae61cde67bc7c32b2493a6cc56e85a456", null ],
+      [ "yr", "structdg_1_1_orthogonal_refined_grid_x3d.html#aac68d172b668745885cc4122589f4492", null ],
+      [ "yz", "structdg_1_1_orthogonal_refined_grid_x3d.html#af40495df6c8c55cc2db0a22645f840ec", null ],
+      [ "z", "structdg_1_1_orthogonal_refined_grid_x3d.html#a300ff87c07c13bc5f4fefe70f3a3137e", null ]
+    ] ],
+    [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html", [
+      [ "metric_category", "structdg_1_1_orthogonal_refined_grid_x2d.html#aafd71e93da45e1f98154c6a2c2bf1b22", null ],
+      [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html#a916682eedce8d1778caa0050d11a8a5c", null ],
+      [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html#ab362dc5953405aab395b7aab1ff8a4d6", null ],
+      [ "associated", "structdg_1_1_orthogonal_refined_grid_x2d.html#a1342cd77cc689858f42c70cf3eb7144c", null ],
+      [ "g_xx", "structdg_1_1_orthogonal_refined_grid_x2d.html#a4415f029ecb13d395f744ef47fd776d3", null ],
+      [ "g_xy", "structdg_1_1_orthogonal_refined_grid_x2d.html#a7b228dbf2afdbca1960021cd5817feb2", null ],
+      [ "g_yy", "structdg_1_1_orthogonal_refined_grid_x2d.html#a92752bfadb77ccba32730fa9e6159bd0", null ],
+      [ "perpVol", "structdg_1_1_orthogonal_refined_grid_x2d.html#abc603186d3c63079b706c635ba66b5cb", null ],
+      [ "r", "structdg_1_1_orthogonal_refined_grid_x2d.html#a99aef314bcbcb93246c7f340c2da2d5e", null ],
+      [ "vol", "structdg_1_1_orthogonal_refined_grid_x2d.html#a1b175840333942e72f4e0b5c129675db", null ],
+      [ "x", "structdg_1_1_orthogonal_refined_grid_x2d.html#a9a4c424f69c75ef81c93ba967a316781", null ],
+      [ "xr", "structdg_1_1_orthogonal_refined_grid_x2d.html#a68de8cb3372b1ffe8475999991bcb03a", null ],
+      [ "xz", "structdg_1_1_orthogonal_refined_grid_x2d.html#a446705500097679797d42163ca87f0b8", null ],
+      [ "yr", "structdg_1_1_orthogonal_refined_grid_x2d.html#a4922eeec1b7d153fb32d3637a163947b", null ],
+      [ "yz", "structdg_1_1_orthogonal_refined_grid_x2d.html#a7240a71633a9b4ae0076722a2710a993", null ],
+      [ "z", "structdg_1_1_orthogonal_refined_grid_x2d.html#a27b96579b41a3be466297a4ae6b6a0b9", null ]
     ] ]
 ];

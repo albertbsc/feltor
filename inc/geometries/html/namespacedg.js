@@ -1,15 +1,6 @@
 var namespacedg =
 [
-    [ "detail", null, [
-      [ "LaplaceAdaptPsi", "structdg_1_1detail_1_1_laplace_adapt_psi.html", "structdg_1_1detail_1_1_laplace_adapt_psi" ],
-      [ "LaplaceChiPsi", "structdg_1_1detail_1_1_laplace_chi_psi.html", "structdg_1_1detail_1_1_laplace_chi_psi" ],
-      [ "LaplacePsi", "structdg_1_1detail_1_1_laplace_psi.html", "structdg_1_1detail_1_1_laplace_psi" ]
-    ] ],
-    [ "flux", null, [
-      [ "detail", null, [
-        [ "Fpsi", "structdg_1_1flux_1_1detail_1_1_fpsi.html", "structdg_1_1flux_1_1detail_1_1_fpsi" ]
-      ] ]
-    ] ],
+    [ "geo", "namespacedg_1_1geo.html", "namespacedg_1_1geo" ],
     [ "ConformalGrid2d", "structdg_1_1_conformal_grid2d.html", "structdg_1_1_conformal_grid2d" ],
     [ "ConformalGrid3d", "structdg_1_1_conformal_grid3d.html", "structdg_1_1_conformal_grid3d" ],
     [ "ConformalMPIGrid2d", "structdg_1_1_conformal_m_p_i_grid2d.html", "structdg_1_1_conformal_m_p_i_grid2d" ],
@@ -24,20 +15,6 @@ var namespacedg =
     [ "CurvilinearMPIGrid3d", "structdg_1_1_curvilinear_m_p_i_grid3d.html", "structdg_1_1_curvilinear_m_p_i_grid3d" ],
     [ "CurvilinearRefinedGrid2d", "structdg_1_1_curvilinear_refined_grid2d.html", "structdg_1_1_curvilinear_refined_grid2d" ],
     [ "CurvilinearRefinedGrid3d", "structdg_1_1_curvilinear_refined_grid3d.html", "structdg_1_1_curvilinear_refined_grid3d" ],
-    [ "DivLiseikinX", "structdg_1_1_div_liseikin_x.html", "structdg_1_1_div_liseikin_x" ],
-    [ "DivLiseikinY", "structdg_1_1_div_liseikin_y.html", "structdg_1_1_div_liseikin_y" ],
-    [ "Field", "structdg_1_1_field.html", "structdg_1_1_field" ],
-    [ "FluxGenerator", "structdg_1_1_flux_generator.html", "structdg_1_1_flux_generator" ],
-    [ "Hector", "structdg_1_1_hector.html", "structdg_1_1_hector" ],
-    [ "HectorX", "structdg_1_1_hector_x.html", "structdg_1_1_hector_x" ],
-    [ "Liseikin_XX", "structdg_1_1_liseikin___x_x.html", "structdg_1_1_liseikin___x_x" ],
-    [ "Liseikin_XY", "structdg_1_1_liseikin___x_y.html", "structdg_1_1_liseikin___x_y" ],
-    [ "Liseikin_YY", "structdg_1_1_liseikin___y_y.html", "structdg_1_1_liseikin___y_y" ],
-    [ "LiseikinCollective", "structdg_1_1_liseikin_collective.html", "structdg_1_1_liseikin_collective" ],
-    [ "NablaPsiInv", "structdg_1_1_nabla_psi_inv.html", "structdg_1_1_nabla_psi_inv" ],
-    [ "NablaPsiInvCollective", "structdg_1_1_nabla_psi_inv_collective.html", "structdg_1_1_nabla_psi_inv_collective" ],
-    [ "NablaPsiInvX", "structdg_1_1_nabla_psi_inv_x.html", "structdg_1_1_nabla_psi_inv_x" ],
-    [ "NablaPsiInvY", "structdg_1_1_nabla_psi_inv_y.html", "structdg_1_1_nabla_psi_inv_y" ],
     [ "OrthogonalGrid2d", "structdg_1_1_orthogonal_grid2d.html", "structdg_1_1_orthogonal_grid2d" ],
     [ "OrthogonalGrid3d", "structdg_1_1_orthogonal_grid3d.html", "structdg_1_1_orthogonal_grid3d" ],
     [ "OrthogonalGridX2d", "structdg_1_1_orthogonal_grid_x2d.html", "structdg_1_1_orthogonal_grid_x2d" ],
@@ -47,11 +24,5 @@ var namespacedg =
     [ "OrthogonalRefinedGrid2d", "structdg_1_1_orthogonal_refined_grid2d.html", "structdg_1_1_orthogonal_refined_grid2d" ],
     [ "OrthogonalRefinedGrid3d", "structdg_1_1_orthogonal_refined_grid3d.html", "structdg_1_1_orthogonal_refined_grid3d" ],
     [ "OrthogonalRefinedGridX2d", "structdg_1_1_orthogonal_refined_grid_x2d.html", "structdg_1_1_orthogonal_refined_grid_x2d" ],
-    [ "OrthogonalRefinedGridX3d", "structdg_1_1_orthogonal_refined_grid_x3d.html", "structdg_1_1_orthogonal_refined_grid_x3d" ],
-    [ "Ribeiro", "structdg_1_1_ribeiro.html", "structdg_1_1_ribeiro" ],
-    [ "RibeiroFluxGenerator", "structdg_1_1_ribeiro_flux_generator.html", "structdg_1_1_ribeiro_flux_generator" ],
-    [ "RibeiroX", "structdg_1_1_ribeiro_x.html", "structdg_1_1_ribeiro_x" ],
-    [ "SeparatrixOrthogonal", "structdg_1_1_separatrix_orthogonal.html", "structdg_1_1_separatrix_orthogonal" ],
-    [ "SimpleOrthogonal", "structdg_1_1_simple_orthogonal.html", "structdg_1_1_simple_orthogonal" ],
-    [ "SimpleOrthogonalX", "structdg_1_1_simple_orthogonal_x.html", "structdg_1_1_simple_orthogonal_x" ]
+    [ "OrthogonalRefinedGridX3d", "structdg_1_1_orthogonal_refined_grid_x3d.html", "structdg_1_1_orthogonal_refined_grid_x3d" ]
 ];

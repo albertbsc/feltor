@@ -3,7 +3,7 @@ var structdg_1_1_grid_x2d =
     [ "dimensionality", "structdg_1_1_grid_x2d.html#af56290bdd27254f99279f8a9e348bffb", null ],
     [ "memory_category", "structdg_1_1_grid_x2d.html#a190d221262f75b4ebe3612402f875633", null ],
     [ "GridX2d", "structdg_1_1_grid_x2d.html#a6d3a3baa034a6d6b7eba02b82dcf2245", null ],
-    [ "GridX2d", "group__grid.html#gabcfd92a7ae9e91431e29a7634dcfabf9", null ],
+    [ "GridX2d", "structdg_1_1_grid_x2d.html#abcfd92a7ae9e91431e29a7634dcfabf9", null ],
     [ "bcx", "structdg_1_1_grid_x2d.html#ab35780e0cbe8f9aa270ea0c1903d93a1", null ],
     [ "bcy", "structdg_1_1_grid_x2d.html#a8f7140895a7ff49145abeb66d5c45213", null ],
     [ "contains", "structdg_1_1_grid_x2d.html#a2204e291487147772015f32fa7299170", null ],

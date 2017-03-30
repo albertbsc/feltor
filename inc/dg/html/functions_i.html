@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -163,12 +162,24 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>init()
 : <a class="el" href="structdg_1_1_a_b.html#a2d1c81ab60c6528f4c71852ea383f707">dg::AB&lt; k, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_karniadakis.html#a3ca17d71a6074b2f7ca8f6e4f48f99e9">dg::Karniadakis&lt; Vector &gt;</a>
+</li>
+<li>init_X_boundaries()
+: <a class="el" href="structdg_1_1_grid2d.html#af1e1a6fe6329e32e5eefdc3f35a5b924">dg::Grid2d</a>
+, <a class="el" href="structdg_1_1_grid3d.html#a5f0cb8a6f0d5d864fa216b4ed86e001b">dg::Grid3d</a>
+, <a class="el" href="structdg_1_1_grid_x2d.html#a192804ca21d8c76f05f585896c131506">dg::GridX2d</a>
+, <a class="el" href="structdg_1_1_grid_x3d.html#a42701071f6fb1553f09d7f0324cd34cd">dg::GridX3d</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid2d.html#a1ad827964d531af4303d9b50a36e369d">dg::MPIGrid2d</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid3d.html#a092631930e2bd0223b73c0280d11989c">dg::MPIGrid3d</a>
+, <a class="el" href="structdg_1_1_refined_grid2d.html#aa475428bf36e878d2296ba947f8bba20">dg::RefinedGrid2d</a>
+, <a class="el" href="structdg_1_1_refined_grid3d.html#aebc37eb70b9e0bae346d5e698f7e7e59">dg::RefinedGrid3d</a>
+, <a class="el" href="structdg_1_1_refined_grid_x2d.html#a8b0b299c5ecc37a69fce6aa9b852157f">dg::RefinedGridX2d</a>
+, <a class="el" href="structdg_1_1_refined_grid_x3d.html#ab5c2967552453a1406300baad59897c3">dg::RefinedGridX3d</a>
 </li>
 <li>inner_matrix()
 : <a class="el" href="structdg_1_1_row_col_dist_mat.html#ac95cd9424ce4d3b32e22c865774c3334">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
@@ -184,8 +195,14 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="structdg_1_1_grid_x2d.html#aa4947b814bddc702a76f1fd2f4b9967e">dg::GridX2d</a>
 , <a class="el" href="structdg_1_1_grid_x3d.html#a96648fb614b7ba9f995f454b89f42cd8">dg::GridX3d</a>
 </li>
+<li>inside()
+: <a class="el" href="structdg_1_1_cauchy.html#a811035f6afe477f0a921289f489a9068">dg::Cauchy</a>
+</li>
+<li>Inverse()
+: <a class="el" href="structdg_1_1_inverse.html#a5004d7c7741a197cab7898acbbcc63aa">dg::Inverse&lt; SymmetricOp, container &gt;</a>
+</li>
 <li>Invert()
-: <a class="el" href="structdg_1_1_invert.html#a2602f6e265142a91b7e7ecad2f60fad9">dg::Invert&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_invert.html#ab64907846ffeb150d9412b0056db66f5">dg::Invert&lt; container &gt;</a>
 </li>
 <li>IVec
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af1364d9c406951269b14c6c76ee95022">dg::CooSparseBlockMat&lt; value_type &gt;</a>
@@ -197,7 +214,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

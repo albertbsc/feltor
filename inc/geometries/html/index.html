@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -122,14 +122,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">Geometry Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Welcome to the Geometry extension of FELTOR.</p>
-<p>This library implements generic equilibrium magnetic fields that solves the Grad Shafranov equation as functors. Furthermore, it provides several derived quantities like the curvature and field strength terms and a set of predefined parameters that model various toroidal geometries. Last but not least we add several new grids to the dG namespace. </p>
+<div class="textblock"><p>This extension adds new features to the FELTOR core dg library.</p>
+<ul>
+<li>the conformal, orthogonal and curvilinear grid classes are added to the dg namespace.</li>
+<li>several grid generator classes are added, among them our new Hector class are added to the <a class="el" href="namespacedg_1_1geo.html">dg::geo</a> namespace</li>
+<li>a bunch of new functors implementing various magnetic field geometries and profiles are added to the <a class="el" href="namespacedg_1_1geo.html">dg::geo</a> namespace</li>
+<li>there are some miscellaneous additions like a flux surface average class and one used to integrate the field lines for parallel derivatives all in the <a class="el" href="namespacedg_1_1geo.html">dg::geo</a> namespace. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:36 for Geometry by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:20 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

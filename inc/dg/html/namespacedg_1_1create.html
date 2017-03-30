@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
     <li><a href="../../../inc/file/html/index.html">file</a></li>
     <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <li><a href="../../../inc/geometries/html/modules.html">geometry</a></li>
     <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
@@ -66,7 +66,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -501,12 +500,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gab534ed06b8f8541b2dc1059155978d40"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab534ed06b8f8541b2dc1059155978d40">inv_weights</a> (const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;g)</td></tr>
 <tr class="memdesc:gab534ed06b8f8541b2dc1059155978d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 3d X-space inverse weight coefficients  <a href="group__highlevel.html#gab534ed06b8f8541b2dc1059155978d40">More...</a><br /></td></tr>
 <tr class="separator:gab534ed06b8f8541b2dc1059155978d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67481e26561ad0454ce39a6388b116c7"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga67481e26561ad0454ce39a6388b116c7">scatterMap</a> (unsigned nx, unsigned ny, unsigned Nx, unsigned Ny)</td></tr>
-<tr class="memdesc:ga67481e26561ad0454ce39a6388b116c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index Map for scatter operation on dg formatted vectors.  <a href="group__scatter.html#ga67481e26561ad0454ce39a6388b116c7">More...</a><br /></td></tr>
-<tr class="separator:ga67481e26561ad0454ce39a6388b116c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94bbc21cbc209cea13595b5e169d798d"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga94bbc21cbc209cea13595b5e169d798d">gatherMap</a> (unsigned n, unsigned Nx, unsigned Ny)</td></tr>
-<tr class="memdesc:ga94bbc21cbc209cea13595b5e169d798d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index map for gather operations on dg formatted vectors.  <a href="group__scatter.html#ga94bbc21cbc209cea13595b5e169d798d">More...</a><br /></td></tr>
-<tr class="separator:ga94bbc21cbc209cea13595b5e169d798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">gather</a> (const thrust::host_vector&lt; int &gt; &amp;map)</td></tr>
 <tr class="memdesc:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a permutation matrix from a permutation map.  <a href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">More...</a><br /></td></tr>
 <tr class="separator:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,53 +518,37 @@ Functions</h2></td></tr>
 <tr class="memitem:ga04b35be22a8270bba0a4ece48603e1bc"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga04b35be22a8270bba0a4ece48603e1bc">contiguousLineNumbers</a> (unsigned rows, unsigned cols)</td></tr>
 <tr class="memdesc:ga04b35be22a8270bba0a4ece48603e1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a matrix containing it's line number as elements  <a href="group__scatter.html#ga04b35be22a8270bba0a4ece48603e1bc">More...</a><br /></td></tr>
 <tr class="separator:ga04b35be22a8270bba0a4ece48603e1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afafe6fd110ae733dfe8084b5dd8dbc16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afafe6fd110ae733dfe8084b5dd8dbc16"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolation</b> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:afafe6fd110ae733dfe8084b5dd8dbc16"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#afafe6fd110ae733dfe8084b5dd8dbc16">interpolation</a> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:afafe6fd110ae733dfe8084b5dd8dbc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aecc909ae28de6513602029396dc5d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7aecc909ae28de6513602029396dc5d8"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolationT</b> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a7aecc909ae28de6513602029396dc5d8"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a7aecc909ae28de6513602029396dc5d8">interpolationT</a> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a7aecc909ae28de6513602029396dc5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6ef94764655741d2858002d6936d043"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6ef94764655741d2858002d6936d043"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:ab6ef94764655741d2858002d6936d043"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#ab6ef94764655741d2858002d6936d043">projection</a> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:ab6ef94764655741d2858002d6936d043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3cf682365698a957d5e5ca2fa2fac5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c3cf682365698a957d5e5ca2fa2fac5"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smoothing</b> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g)</td></tr>
+<tr class="memitem:a3c3cf682365698a957d5e5ca2fa2fac5"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a3c3cf682365698a957d5e5ca2fa2fac5">smoothing</a> (const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;g)</td></tr>
 <tr class="separator:a3c3cf682365698a957d5e5ca2fa2fac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a967c21f88a94c57e6f532a99c3a7db9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a967c21f88a94c57e6f532a99c3a7db9c"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolation</b> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a967c21f88a94c57e6f532a99c3a7db9c"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a967c21f88a94c57e6f532a99c3a7db9c">interpolation</a> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a967c21f88a94c57e6f532a99c3a7db9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a180f9416266a2e9ad117f6a40b0db3e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a180f9416266a2e9ad117f6a40b0db3e9"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolationT</b> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a180f9416266a2e9ad117f6a40b0db3e9"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a180f9416266a2e9ad117f6a40b0db3e9">interpolationT</a> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a180f9416266a2e9ad117f6a40b0db3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a72d9744821f9f41a73d3b89716f415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a72d9744821f9f41a73d3b89716f415"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a4a72d9744821f9f41a73d3b89716f415"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a4a72d9744821f9f41a73d3b89716f415">projection</a> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a4a72d9744821f9f41a73d3b89716f415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35fc8c8bbe94978c38ecb5706b961df6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35fc8c8bbe94978c38ecb5706b961df6"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smoothing</b> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g)</td></tr>
+<tr class="memitem:a35fc8c8bbe94978c38ecb5706b961df6"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a35fc8c8bbe94978c38ecb5706b961df6">smoothing</a> (const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;g)</td></tr>
 <tr class="separator:a35fc8c8bbe94978c38ecb5706b961df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee38ad7482b30f9888ca4fe451ad5a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acee38ad7482b30f9888ca4fe451ad5a2"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolation</b> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:acee38ad7482b30f9888ca4fe451ad5a2"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#acee38ad7482b30f9888ca4fe451ad5a2">interpolation</a> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:acee38ad7482b30f9888ca4fe451ad5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61422f069a94dbfa539d2b9c4b2efc15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61422f069a94dbfa539d2b9c4b2efc15"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolationT</b> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a61422f069a94dbfa539d2b9c4b2efc15"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a61422f069a94dbfa539d2b9c4b2efc15">interpolationT</a> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a61422f069a94dbfa539d2b9c4b2efc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f16765e9b4c86a5a999ec593a7473c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f16765e9b4c86a5a999ec593a7473c3"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a9f16765e9b4c86a5a999ec593a7473c3"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a9f16765e9b4c86a5a999ec593a7473c3">projection</a> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a9f16765e9b4c86a5a999ec593a7473c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a1eac447d7e745df0f4ee9933315e20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a1eac447d7e745df0f4ee9933315e20"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smoothing</b> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g)</td></tr>
+<tr class="memitem:a0a1eac447d7e745df0f4ee9933315e20"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a0a1eac447d7e745df0f4ee9933315e20">smoothing</a> (const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;g)</td></tr>
 <tr class="separator:a0a1eac447d7e745df0f4ee9933315e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa394012c7fa997c8f7ec25a7cc7b525"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa394012c7fa997c8f7ec25a7cc7b525"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolation</b> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:afa394012c7fa997c8f7ec25a7cc7b525"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#afa394012c7fa997c8f7ec25a7cc7b525">interpolation</a> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:afa394012c7fa997c8f7ec25a7cc7b525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad452f2409b6954017fe751b810bd7220"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad452f2409b6954017fe751b810bd7220"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interpolationT</b> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:ad452f2409b6954017fe751b810bd7220"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#ad452f2409b6954017fe751b810bd7220">interpolationT</a> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:ad452f2409b6954017fe751b810bd7220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fba250c022fbfd05aec4142aee0435a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fba250c022fbfd05aec4142aee0435a"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>projection</b> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
+<tr class="memitem:a0fba250c022fbfd05aec4142aee0435a"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a0fba250c022fbfd05aec4142aee0435a">projection</a> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g_fine)</td></tr>
 <tr class="separator:a0fba250c022fbfd05aec4142aee0435a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39db885c717bad714191df1290c2f179"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39db885c717bad714191df1290c2f179"></a>
-cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smoothing</b> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g)</td></tr>
+<tr class="memitem:a39db885c717bad714191df1290c2f179"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html#a39db885c717bad714191df1290c2f179">smoothing</a> (const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;g)</td></tr>
 <tr class="separator:a39db885c717bad714191df1290c2f179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga1d9bd38a37e9beebdf4b4b43e46b8585">volume</a> (const Geometry &amp;g)</td></tr>
@@ -868,6 +845,134 @@ cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="me
 
 </div>
 </div>
+<a class="anchor" id="acee38ad7482b30f9888ca4fe451ad5a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa394012c7fa997c8f7ec25a7cc7b525"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afafe6fd110ae733dfe8084b5dd8dbc16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a967c21f88a94c57e6f532a99c3a7db9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61422f069a94dbfa539d2b9c4b2efc15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolationT </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad452f2409b6954017fe751b810bd7220"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolationT </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7aecc909ae28de6513602029396dc5d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolationT </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a180f9416266a2e9ad117f6a40b0db3e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::interpolationT </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a85cc8b311336b6a9221f456778878e32"></a>
 <div class="memitem">
 <div class="memproto">
@@ -940,13 +1045,141 @@ cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;&#160;</td><td class="me
 
 </div>
 </div>
+<a class="anchor" id="a9f16765e9b4c86a5a999ec593a7473c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::projection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fba250c022fbfd05aec4142aee0435a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::projection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6ef94764655741d2858002d6936d043"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::projection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a72d9744821f9f41a73d3b89716f415"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::projection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g_fine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a1eac447d7e745df0f4ee9933315e20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::smoothing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x2d.html">dg::RefinedGridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39db885c717bad714191df1290c2f179"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::smoothing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid_x3d.html">dg::RefinedGridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c3cf682365698a957d5e5ca2fa2fac5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::smoothing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid2d.html">dg::RefinedGrid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a35fc8c8bbe94978c38ecb5706b961df6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::smoothing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_refined_grid3d.html">dg::RefinedGrid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="namespacedg_1_1create.html">create</a></li>
-    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Thu Mar 30 2017 16:12:19 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

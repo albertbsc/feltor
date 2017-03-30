@@ -26,6 +26,9 @@ var group__time =
       [ "operator()", "structdg_1_1_r_k__classic.html#a0b43ed4c0eb0b3b1eb2ecb9d572db8c4", null ]
     ] ],
     [ "integrateRK", "group__time.html#gad3a5564f35ec4bb86f8d71cd80b33fc7", null ],
+    [ "integrateRK17", "group__time.html#ga95d124cc0e2b119f4946934d94284325", null ],
+    [ "integrateRK4", "group__time.html#gaf12e7bafedc7a2da181f5cf92f0cafa6", null ],
+    [ "integrateRK6", "group__time.html#gad56e23f52d561074bd34ec2c4affb6fa", null ],
     [ "stepperRK", "group__time.html#ga266d8134495e64da3933bcf3b834cbb6", null ],
     [ "stepperRK17", "group__time.html#ga14b86e682cd126f06a0fd5410f1f0f01", null ],
     [ "stepperRK4", "group__time.html#ga4ae13a63c4a1a2365ff63a97cb0a251a", null ],

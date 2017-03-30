@@ -4,7 +4,7 @@ var structdg_1_1_grid2d =
     [ "memory_category", "structdg_1_1_grid2d.html#a95154123fc0efe5135fa89546a7e82f0", null ],
     [ "Grid2d", "structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372", null ],
     [ "Grid2d", "structdg_1_1_grid2d.html#acd52e0ba30c6b27d5e410d6f95c6d6f0", null ],
-    [ "Grid2d", "group__grid.html#gaf3b834bc3f657a4ea29eab8652320027", null ],
+    [ "Grid2d", "structdg_1_1_grid2d.html#af3b834bc3f657a4ea29eab8652320027", null ],
     [ "bcx", "structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19", null ],
     [ "bcy", "structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d", null ],
     [ "contains", "structdg_1_1_grid2d.html#a58bc4eaf6c47706c277fef1ee6831ef4", null ],
